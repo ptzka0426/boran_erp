@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+      
+  <modelVersion>4.0.0</modelVersion>
+      
+  <!-- ________基本信息__________-->
+      
+  <!--项目或者组织的唯一标志-->
+      
+  <groupId>boran_erp</groupId>
+      
+  <!--项目的通用名称-->
+      
+  <artifactId>boran_erp</artifactId>
+      
+  <!--项目的版本-->
+      
+  <version>1.0-SNAPSHOT</version>
+      
+  <!--打包的机制-->
+      
+  <!--maven的父工程packaging标签的值必须为pom-->
+      
+  <packaging>pom</packaging>
+      
+  <description>Archetypec初级骨架</description>
+      
+  <!-- 集中定义依赖版本号，定义属性值-->
+      
+  <properties>
+            
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+            
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+            
+    <java.version>1.8</java.version>
+            
+    <spring.boot.version>2.1.1.RELEASE</spring.boot.version>
+            
+    <maven.compiler.source>14</maven.compiler.source>
+            
+    <maven.compiler.target>14</maven.compiler.target>
+        
+  </properties>
+      
+  <!-- 版本说明：这里统一管理依赖的版本号 -->
+      
+  <dependencyManagement>
+            
+    <dependencies>
+                  
+      <!-- SpringBoot的依赖配置-->
+                  
+      <dependency>
+                        
+        <groupId>org.springframework.boot</groupId>
+                        
+        <artifactId>spring-boot-dependencies</artifactId>
+                        
+        <version>${spring.boot.version}</version>
+                    
+      </dependency>
+                  
+      <!-- SpringBoot Web容器 -->
+                  
+      <dependency>
+                        
+        <groupId>org.springframework.boot</groupId>
+                        
+        <artifactId>spring-boot-starter-web</artifactId>
+                        
+        <version>2.3.5.RELEASE</version>
+                    
+      </dependency>
+                  
+      <!--数据库 Mybatis-plus-->
+                  
+      <dependency>
+                        
+        <groupId>com.baomidou</groupId>
+                        
+        <artifactId>mybatis-plus-boot-starter</artifactId>
+                        
+        <version>3.4.1</version>
+                    
+      </dependency>
+                  
+      <dependency>
+                        
+        <groupId>com.baomidou</groupId>
+                        
+        <artifactId>mybatis-plus-generator</artifactId>
+                        
+        <version>3.4.1</version>
+                    
+      </dependency>
+                  
+      <dependency>
+                        
+        <groupId>mysql</groupId>
+                        
+        <artifactId>mysql-connector-java</artifactId>
+                        
+        <scope>runtime</scope>
+                        
+        <version>8.0.21</version>
+                    
+      </dependency>
+                  
+      <!--小辣椒实体注解-->
+                  
+      <dependency>
+                        
+        <groupId>org.projectlombok</groupId>
+                        
+        <artifactId>lombok</artifactId>
+                        
+        <optional>true</optional>
+                        
+        <version>1.18.18</version>
+                    
+      </dependency>
+                  
+      <!--MultipartFile file 文件-->
+                  
+      <dependency>
+                        
+        <groupId>commons-fileupload</groupId>
+                        
+        <artifactId>commons-fileupload</artifactId>
+                        
+        <version>1.4</version>
+                    
+      </dependency>
+                  
+      <!--日志-->
+              
+    </dependencies>
+        
+  </dependencyManagement>
+      
+  <!--springboot的子工程配置-->
+      
+  <parent>
+            
+    <groupId>org.springframework.boot</groupId>
+            
+    <artifactId>spring-boot-starter-parent</artifactId>
+            
+    <version>2.3.5.RELEASE</version>
+        
+  </parent>
+      
+  <!--依赖关系-->
+      
+  <!--编译管理 jdk版本和字符集编码-->
+  
+  <modules>
+      
+    <module>boran_erp-PD</module>
+      
+  </modules>
+</project>

@@ -1,0 +1,67 @@
+2021-06-16 15:59:55.198 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 15:59:55.199 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 15:59:55.200 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 16:06:28.018 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 16:06:28.020 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 16:06:28.020 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 16:15:17.615 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 16:15:17.618 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 16:15:17.618 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 16:16:23.370 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 16:16:23.372 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 16:16:23.372 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 16:17:37.251 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 16:17:37.252 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 16:17:37.253 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 16:29:48.180 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\Config\Knife4jConfiguration.class]
+2021-06-16 16:29:48.181 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\Config\MybatisPlusConfig.class]
+2021-06-16 16:29:48.181 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\Config\RedisAutoConfig.class]
+2021-06-16 16:29:48.181 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\Config\WebConfig.class]
+2021-06-16 16:34:47.106 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 16:34:47.107 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 16:34:47.107 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 16:36:26.477 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 16:36:26.478 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 16:36:26.479 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 16:37:14.966 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 16:37:14.967 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 16:37:14.968 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 16:38:32.738 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 16:38:32.739 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 16:38:32.739 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 16:39:12.824 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 16:39:12.825 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 16:39:12.826 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 16:40:48.698 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 16:40:48.699 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 16:40:48.699 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 16:44:13.099 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 16:44:13.099 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 16:44:13.099 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 16:50:53.629 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 16:50:53.630 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 16:50:53.631 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 17:12:31.982 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 17:12:31.984 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 17:12:31.985 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 17:17:16.816 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 17:17:16.817 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 17:17:16.817 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 17:20:06.113 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 17:20:06.113 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 17:20:06.113 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 17:25:31.797 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 17:25:31.798 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 17:25:31.798 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 17:27:27.893 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 17:27:27.893 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 17:27:27.894 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 17:36:39.449 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 17:36:39.449 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 17:36:39.450 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 17:38:40.273 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 17:38:40.274 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 17:38:40.274 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
+2021-06-16 17:39:31.831 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes\com\boran\erp\mapper\UserInfoMapper.class]
+2021-06-16 17:39:31.834 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userInfoMapper' and 'com.boran.erp.mapper.UserInfoMapper' mapperInterface
+2021-06-16 17:39:31.834 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userInfoMapper'.
