@@ -39,6 +39,7 @@ public class UserInfoController {
     @Autowired
     //private UserInfoService userv;
     private UserRoleService userrole;
+
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ApiImplicitParams({
             @ApiImplicitParam(name = "user_yhm", value = "用户名", required = true),
@@ -64,6 +65,9 @@ public class UserInfoController {
                             .setTimeout(60 * 60)    // 指定此次登录token的有效期, 单位:（60*60）秒 （如未指定，自动取全局配置的timeout值）
                     );
                 }
+                /*System.out.println(StpUtil.hasRole("超级管理员"));
+                System.out.println(StpUtil.hasPermission("超级管理员:Insert"));
+                System.out.println(StpUtil.hasPermission("普通用户:Delete"));*/
                 /*satoken令牌认证*/
                 // return AjaxJson.getSuccess("登陆成功", "{token:" + StpUtil.getTokenName() + ",tokenvalue:" + StpUtil.getTokenValue() + "}");
                 return AjaxJson.getSuccess("登陆成功", StpUtil.getTokenInfo());

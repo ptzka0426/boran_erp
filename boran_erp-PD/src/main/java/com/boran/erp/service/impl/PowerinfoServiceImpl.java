@@ -5,8 +5,11 @@ import com.boran.erp.Entity.Powerinfo;
 import com.boran.erp.mapper.PowerinfoMapper;
 import com.boran.erp.mapper.UserRoleMapper;
 import com.boran.erp.service.PowerinfoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  *
@@ -14,8 +17,14 @@ import org.springframework.stereotype.Service;
 @Service
 @AutoConfigureAfter({PowerinfoMapper.class})
 public class PowerinfoServiceImpl extends ServiceImpl<PowerinfoMapper, Powerinfo>
-implements PowerinfoService {
+        implements PowerinfoService {
+    @Autowired
+    private PowerinfoMapper powerinfoMapper;
 
+    @Override
+    public List<String> PowerName(String RoleName) {
+        return powerinfoMapper.PowerName(RoleName);
+    }
 }
 
 

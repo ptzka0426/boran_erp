@@ -16,7 +16,7 @@ public interface UserRoleMapper extends BaseMapper<UserRole> {
     @Select(" select r.RoleName from userinfo u INNER JOIN user_role ur on u.id=ur.UserId " +
             "INNER JOIN roleinfo r on ur.RoleId=u.id " +
             " where u.id=#{uid}")
-    Map<String, Object> RoleName(int uid);
+    List<String> RoleName(int uid);
 
 }
 

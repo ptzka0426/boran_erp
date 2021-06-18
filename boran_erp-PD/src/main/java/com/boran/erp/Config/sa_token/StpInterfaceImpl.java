@@ -6,8 +6,11 @@ package com.boran.erp.Config.sa_token;
  */
 
 import cn.dev33.satoken.stp.StpInterface;
+import com.boran.erp.mapper.PowerinfoMapper;
+import com.boran.erp.service.PowerinfoService;
 import com.boran.erp.service.UserInfoService;
 import com.boran.erp.service.UserRoleService;
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -25,17 +28,35 @@ public class StpInterfaceImpl implements StpInterface {
     @Autowired
     //private UserInfoService userv;
     private UserRoleService userrole;
+    @Autowired
+    private PowerinfoService powerService;
 
     /**
-     * 返回一个账号所拥有的权限码集合
-     * 数据库角色和权限
+     * @param loginId  存入的id
+     * @param loginKey loginkey 角色
+     *                 返回一个账号所拥有的权限码集合,数据库角色和权限
+     * @return
      */
     @Override
     public List<String> getPermissionList(Object loginId, String loginKey) {
-        //拿到角色
-        String RoleName= (String) userrole.RoleName(Integer.parseInt(loginId.toString())).get("RoleName");
-
-        HashMap<String, List<String>> listHashMap = new HashMap<>();
+        try {
+            if (loginKey.equals("login")) {
+                //拿到角色
+                List<String> RoleName = userrole.RoleName(Integer.parseInt(loginId.toString()));
+                System.out.println(loginKey);
+                //角色——》权限
+                List<String> pwr = new ArrayList<>();
+                RoleName.forEach(role -> {
+                    powerService.PowerName(role).forEach(power -> {
+                        pwr.add(role + ":" + power);
+                    });
+                });
+                return pwr;
+            }
+        } catch (Exception e) {
+            System.out.println("权限认证异常......");
+        }
+        /*HashMap<String, List<String>> listHashMap = new HashMap<>();
         List<String> list = new ArrayList<String>();
         list.add("101");
         list.add("user-add");
@@ -50,7 +71,7 @@ public class StpInterfaceImpl implements StpInterface {
         // list模拟数据库权限
         if (loginKey.equals("login")) {
             return listHashMap.get(loginId);
-        }
+        }*/
         return null;
     }
 
@@ -59,7 +80,14 @@ public class StpInterfaceImpl implements StpInterface {
      */
     @Override
     public List<String> getRoleList(Object loginId, String loginKey) {
-        List<String> lists = new ArrayList<String>();
+        try {
+            if (loginKey.equals("login")) {
+                return userrole.RoleName(Integer.parseInt(loginId.toString()));
+            }
+        } catch (Exception e) {
+            return null;
+        }
+        /*List<String> lists = new ArrayList<String>();
         lists.add("10001");
         lists.add("10002");
         HashMap<String, List<String>> listHashMap = new HashMap<>();
@@ -75,7 +103,7 @@ public class StpInterfaceImpl implements StpInterface {
         System.out.println(loginKey);
         if (loginKey.equals("login")) {
             return listHashMap.get(loginId);
-        }
+        }*/
         return null;
     }
 

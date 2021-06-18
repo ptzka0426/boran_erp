@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -22,7 +23,7 @@ public class UserRoleServiceImpl extends ServiceImpl<UserRoleMapper, UserRole>
     private UserRoleMapper userRoleMapper;
 
     @Override
-    public Map<String, Object> RoleName(int uid) {
+    public List<String> RoleName(int uid) {
         return userRoleMapper.RoleName(uid);
     }
 }
