@@ -11,3 +11,4 @@
 2021-06-18 16:10:58.320 [main] WARN  c.g.x.k.spring.extension.OpenApiExtensionResolver - (Ignores) Failed to read Markdown files,Error Message:class path resource [sign/] cannot be resolved to URL because it does not exist 
 2021-06-18 16:13:50.544 [main] WARN  c.g.x.k.spring.extension.OpenApiExtensionResolver - (Ignores) Failed to read Markdown files,Error Message:class path resource [sign/] cannot be resolved to URL because it does not exist 
 2021-06-18 16:15:09.906 [main] WARN  c.g.x.k.spring.extension.OpenApiExtensionResolver - (Ignores) Failed to read Markdown files,Error Message:class path resource [sign/] cannot be resolved to URL because it does not exist 
+2021-06-18 16:25:01.511 [main] WARN  c.g.x.k.spring.extension.OpenApiExtensionResolver - (Ignores) Failed to read Markdown files,Error Message:class path resource [sign/] cannot be resolved to URL because it does not exist 
