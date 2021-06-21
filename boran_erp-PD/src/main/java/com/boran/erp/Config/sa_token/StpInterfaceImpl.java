@@ -6,6 +6,7 @@ package com.boran.erp.Config.sa_token;
  */
 
 import cn.dev33.satoken.stp.StpInterface;
+import com.boran.erp.Util.RedisUtil;
 import com.boran.erp.mapper.PowerinfoMapper;
 import com.boran.erp.service.PowerinfoService;
 import com.boran.erp.service.UserInfoService;
@@ -18,6 +19,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 自定义权限验证接口扩展
@@ -30,6 +32,8 @@ public class StpInterfaceImpl implements StpInterface {
     private UserRoleService userrole;
     @Autowired
     private PowerinfoService powerService;
+    @Autowired
+    RedisUtil redisUtil;
 
     /**
      * @param loginId  存入的id
@@ -42,15 +46,33 @@ public class StpInterfaceImpl implements StpInterface {
         try {
             if (loginKey.equals("login")) {
                 //拿到角色
-                List<String> RoleName = userrole.RoleName(Integer.parseInt(loginId.toString()));
-                System.out.println(loginKey);
+                List<String> RoleName = new ArrayList<>();//userrole.RoleName(Integer.parseInt(loginId.toString()));
+                if (redisUtil.hasKey("sa_token_role" + loginId)) {//判断角色用户是否有缓存
+                    RoleName = redisUtil.lRange("sa_token_role" + loginId, 0, -1);
+                } else {
+                    RoleName = userrole.RoleName(Integer.parseInt(loginId.toString()));
+                    RoleName.forEach(Role -> {
+                        redisUtil.lLeftPushAll("sa_token_role" + loginId, Role);
+                    });
+                    //设置过期时间
+                    redisUtil.expire("sa_token_power" + loginId, 790, TimeUnit.SECONDS);
+                }
                 //角色——》权限
                 List<String> pwr = new ArrayList<>();
-                RoleName.forEach(role -> {
-                    powerService.PowerName(role).forEach(power -> {
-                        pwr.add(role + ":" + power);
+                if (redisUtil.hasKey("sa_token_power" + loginId)) {//判断是否有缓存
+                    pwr = redisUtil.lRange("sa_token_power" + loginId, 0, -1);
+                } else {
+                    List<String> finalPwr = pwr;
+                    RoleName.forEach(role -> {
+                        powerService.PowerName(role).forEach(power -> {
+                            //写入redis
+                            redisUtil.lLeftPush("sa_token_power" + loginId, role + ":" + power);
+                            finalPwr.add(role + ":" + power);
+                        });
                     });
-                });
+                    //设置过期时间
+                    redisUtil.expire("sa_token_power" + loginId, 790, TimeUnit.SECONDS);
+                }
                 return pwr;
             }
         } catch (Exception e) {

@@ -10,6 +10,7 @@ import com.baomidou.mybatisplus.core.toolkit.Constants;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.boran.erp.Entity.UserInfo;
 import com.boran.erp.Util.AjaxJson;
+import com.boran.erp.Util.RedisUtil;
 import com.boran.erp.service.UserInfoService;
 import com.boran.erp.service.UserRoleService;
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
@@ -65,9 +66,9 @@ public class UserInfoController {
                             .setTimeout(60 * 60)    // 指定此次登录token的有效期, 单位:（60*60）秒 （如未指定，自动取全局配置的timeout值）
                     );
                 }
-                /*System.out.println(StpUtil.hasRole("超级管理员"));
-                System.out.println(StpUtil.hasPermission("超级管理员:Insert"));
-                System.out.println(StpUtil.hasPermission("普通用户:Delete"));*/
+                /*System.out.println(StpUtil.hasRole("超级管理员"));*/
+                 System.out.println(StpUtil.hasPermission("超级管理员:Insert"));
+                /*System.out.println(StpUtil.hasPermission("普通用户:Delete"));*/
                 /*satoken令牌认证*/
                 // return AjaxJson.getSuccess("登陆成功", "{token:" + StpUtil.getTokenName() + ",tokenvalue:" + StpUtil.getTokenValue() + "}");
                 return AjaxJson.getSuccess("登陆成功", StpUtil.getTokenInfo());

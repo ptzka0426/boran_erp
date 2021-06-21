@@ -1,21 +1,30 @@
+/*
 package com.boran.erp.Config;
 
 
+import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.RedisPassword;
+import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
+import org.springframework.data.redis.connection.lettuce.LettuceClientConfiguration;
+import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
+import org.springframework.data.redis.connection.lettuce.LettucePoolingClientConfiguration;
+import org.springframework.data.redis.core.RedisTemplate;
 
 import java.time.Duration;
 
+*/
 /**
  * @Author LT
  * @create 2021-02-02 10:55
- */
-/*@Configuration*/
+ *//*
+
+@Configuration
 public class RedisAutoConfig {
-/*
     @Bean
     public LettuceConnectionFactory defaultLettuceConnectionFactory(RedisStandaloneConfiguration defaultRedisConfig,
                                                                     GenericObjectPoolConfig defaultPoolConfig) {
@@ -95,8 +104,11 @@ public class RedisAutoConfig {
         }
     }
 
+    */
+/*配置*//*
 
-    @Configuration
+    */
+/*@Configuration
     public static class DefaultRedisConfig {
         @Value("${spring.redis.host:127.0.0.1}")
         private String host;
@@ -135,5 +147,7 @@ public class RedisAutoConfig {
             config.setDatabase(database);
             return config;
         }
-    }*/
+    }*//*
+
 }
+*/

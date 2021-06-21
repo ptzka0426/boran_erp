@@ -1,313 +1,942 @@
-2021-06-18 10:00:05.560 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 17936 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
-2021-06-18 10:00:05.564 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
-2021-06-18 10:00:07.828 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
-2021-06-18 10:00:07.836 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
-2021-06-18 10:00:07.837 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-06-18 10:00:07.838 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-06-18 10:00:07.968 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-06-18 10:00:07.968 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2359 ms
-2021-06-18 10:00:09.859 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2021-06-18 10:00:09.924 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-18 10:00:10.075 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
-2021-06-18 10:00:10.098 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
-2021-06-18 10:00:10.099 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
-2021-06-18 10:00:10.101 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-06-18 10:00:10.126 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-06-18 10:00:10.229 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.501 seconds (JVM running for 7.57)
-2021-06-18 10:00:10.231 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+2021-06-21 13:55:14.082 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 14052 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 13:55:14.087 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 13:55:16.002 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 13:55:16.005 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 13:55:16.052 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2021-06-21 13:55:16.983 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 13:55:16.993 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 13:55:16.994 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 13:55:16.994 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 13:55:17.135 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 13:55:17.135 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2987 ms
+2021-06-21 13:55:19.156 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 13:55:19.728 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 13:55:19.976 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 13:55:19.997 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 13:55:19.998 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 13:55:20.002 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 13:55:20.024 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 13:55:20.125 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 7.006 seconds (JVM running for 16.103)
+2021-06-21 13:55:20.128 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
 ===============启动成功了===============
-2021-06-18 10:02:00.670 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-18 10:02:00.671 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-06-18 10:02:00.678 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
-2021-06-18 10:02:01.080 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-06-18 10:02:02.511 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-06-18 10:15:17.790 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 23244 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
-2021-06-18 10:15:17.792 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
-2021-06-18 10:15:19.125 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
-2021-06-18 10:15:19.134 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
-2021-06-18 10:15:19.135 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-06-18 10:15:19.135 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-06-18 10:15:19.254 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-06-18 10:15:19.254 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1413 ms
-2021-06-18 10:15:21.023 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2021-06-18 10:15:21.087 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-18 10:15:21.236 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
-2021-06-18 10:15:21.258 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
-2021-06-18 10:15:21.260 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
-2021-06-18 10:15:21.263 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-06-18 10:15:21.292 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-06-18 10:15:21.400 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 4.267 seconds (JVM running for 5.591)
-2021-06-18 10:15:21.402 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+2021-06-21 14:19:26.987 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 18604 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 14:19:26.989 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 14:19:28.260 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 14:19:28.264 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 14:19:28.310 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2021-06-21 14:19:28.854 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 14:19:28.862 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 14:19:28.863 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 14:19:28.863 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 14:19:28.991 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 14:19:28.991 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1937 ms
+2021-06-21 14:19:29.063 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-06-21 14:19:29.079 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-06-21 14:20:43.150 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 20236 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 14:20:43.152 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 14:20:44.334 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 14:20:44.336 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 14:20:44.426 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76ms. Found 0 Redis repository interfaces.
+2021-06-21 14:20:44.907 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 14:20:44.915 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 14:20:44.916 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 14:20:44.916 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 14:20:45.035 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 14:20:45.035 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1832 ms
+2021-06-21 14:20:46.800 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 14:20:47.097 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 14:20:47.347 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 14:20:47.373 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 14:20:47.375 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 14:20:47.378 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 14:20:47.414 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 14:20:47.535 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.086 seconds (JVM running for 6.704)
+2021-06-21 14:20:47.537 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
 ===============启动成功了===============
-2021-06-18 10:15:24.441 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-18 10:15:24.442 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-06-18 10:15:24.453 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
-2021-06-18 10:15:24.563 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-06-18 10:15:25.618 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-06-18 10:24:37.195 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 21924 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
-2021-06-18 10:24:37.196 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
-2021-06-18 10:24:38.683 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
-2021-06-18 10:24:38.693 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
-2021-06-18 10:24:38.694 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-06-18 10:24:38.694 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-06-18 10:24:38.808 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-06-18 10:24:38.808 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1537 ms
-2021-06-18 10:24:40.611 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2021-06-18 10:24:40.676 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-18 10:24:40.812 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
-2021-06-18 10:24:40.832 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
-2021-06-18 10:24:40.833 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
-2021-06-18 10:24:40.836 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-06-18 10:24:40.861 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-06-18 10:24:40.982 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 4.548 seconds (JVM running for 5.91)
-2021-06-18 10:24:40.985 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+2021-06-21 16:03:39.030 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 340 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:03:39.032 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:03:40.727 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:03:40.731 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:03:40.853 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94ms. Found 0 Redis repository interfaces.
+2021-06-21 16:03:41.623 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:03:41.633 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:03:41.633 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:03:41.633 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:03:41.763 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:03:41.763 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2658 ms
+2021-06-21 16:03:43.682 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:03:44.197 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:03:44.469 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:03:44.493 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:03:44.495 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:03:44.499 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:03:44.523 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:03:44.658 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 6.933 seconds (JVM running for 8.885)
+2021-06-21 16:03:44.662 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
 ===============启动成功了===============
-2021-06-18 10:24:49.840 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-18 10:24:49.840 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-06-18 10:24:49.849 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
-2021-06-18 10:24:49.949 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-06-18 10:24:51.003 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-06-18 11:07:49.893 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 10192 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
-2021-06-18 11:07:49.895 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
-2021-06-18 11:07:52.424 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
-2021-06-18 11:07:52.445 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
-2021-06-18 11:07:52.446 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-06-18 11:07:52.446 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-06-18 11:07:52.568 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-06-18 11:07:52.569 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2595 ms
-2021-06-18 11:07:56.223 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2021-06-18 11:07:56.318 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-18 11:07:56.558 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
-2021-06-18 11:07:56.583 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
-2021-06-18 11:07:56.584 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
-2021-06-18 11:07:56.587 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-06-18 11:07:56.612 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-06-18 11:07:56.781 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 9.131 seconds (JVM running for 13.936)
-2021-06-18 11:07:56.784 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+2021-06-21 16:08:10.051 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 11192 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:08:10.055 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:08:12.292 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:08:12.298 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:08:12.528 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 205ms. Found 0 Redis repository interfaces.
+2021-06-21 16:08:13.823 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:08:13.851 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:08:13.851 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:08:13.852 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:08:14.413 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:08:14.413 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4296 ms
+2021-06-21 16:08:16.374 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:08:16.894 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:08:17.134 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:08:17.273 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:08:17.275 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:08:17.278 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:08:17.303 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:08:17.433 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 8.246 seconds (JVM running for 10.73)
+2021-06-21 16:08:17.438 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
 ===============启动成功了===============
-2021-06-18 11:27:43.270 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 11860 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
-2021-06-18 11:27:43.271 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
-2021-06-18 11:27:45.778 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
-2021-06-18 11:27:45.798 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
-2021-06-18 11:27:45.799 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-06-18 11:27:45.800 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-06-18 11:27:46.055 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-06-18 11:27:46.055 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2736 ms
-2021-06-18 11:27:47.840 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2021-06-18 11:27:47.904 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-18 11:27:48.048 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
-2021-06-18 11:27:48.124 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
-2021-06-18 11:27:48.125 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
-2021-06-18 11:27:48.128 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-06-18 11:27:48.151 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-06-18 11:27:48.250 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.995 seconds (JVM running for 8.033)
-2021-06-18 11:27:48.252 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+2021-06-21 16:08:22.780 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:08:22.781 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:08:22.819 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 37 ms
+2021-06-21 16:08:57.732 [http-nio-9090-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:08:58.891 [http-nio-9090-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:10:59.694 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 23304 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:10:59.695 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:11:00.720 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:11:00.723 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:11:00.764 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2021-06-21 16:11:01.251 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:11:01.259 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:11:01.260 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:11:01.260 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:11:01.378 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:11:01.378 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1636 ms
+2021-06-21 16:11:03.186 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:11:03.528 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:11:03.738 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:11:03.760 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:11:03.761 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:11:03.764 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:11:03.788 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:11:03.941 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 4.976 seconds (JVM running for 6.549)
+2021-06-21 16:11:03.944 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
 ===============启动成功了===============
-2021-06-18 11:28:32.066 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-18 11:28:32.066 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-06-18 11:28:32.117 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 50 ms
-2021-06-18 11:28:32.394 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-06-18 11:28:35.893 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-06-18 11:50:51.653 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 22844 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
-2021-06-18 11:50:51.655 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
-2021-06-18 11:50:54.100 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
-2021-06-18 11:50:54.109 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
-2021-06-18 11:50:54.109 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-06-18 11:50:54.110 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-06-18 11:50:54.251 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-06-18 11:50:54.252 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2512 ms
-2021-06-18 11:50:56.151 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2021-06-18 11:50:56.219 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-18 11:50:56.362 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
-2021-06-18 11:50:56.383 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
-2021-06-18 11:50:56.384 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
-2021-06-18 11:50:56.386 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-06-18 11:50:56.409 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-06-18 11:50:56.537 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.958 seconds (JVM running for 8.749)
-2021-06-18 11:50:56.540 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+2021-06-21 16:11:28.663 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:11:28.663 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:11:28.672 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2021-06-21 16:11:28.812 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:11:29.928 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:12:11.830 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 312 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:12:11.832 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:12:13.017 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:12:13.022 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:12:13.072 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 0 Redis repository interfaces.
+2021-06-21 16:12:13.599 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:12:13.607 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:12:13.608 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:12:13.608 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:12:13.733 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:12:13.733 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1847 ms
+2021-06-21 16:12:15.519 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:12:15.833 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:12:16.067 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:12:16.087 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:12:16.088 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:12:16.091 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:12:16.113 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:12:16.227 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.02 seconds (JVM running for 6.323)
+2021-06-21 16:12:16.230 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
 ===============启动成功了===============
-2021-06-18 11:51:04.353 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-18 11:51:04.353 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-06-18 11:51:04.359 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
-2021-06-18 11:51:04.804 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-06-18 11:51:06.428 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-06-18 15:06:27.543 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 22104 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
-2021-06-18 15:06:27.545 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
-2021-06-18 15:06:31.576 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
-2021-06-18 15:06:31.599 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
-2021-06-18 15:06:31.600 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-06-18 15:06:31.600 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-06-18 15:06:31.865 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-06-18 15:06:31.866 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4237 ms
-2021-06-18 15:06:34.161 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2021-06-18 15:06:34.224 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-18 15:06:34.423 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
-2021-06-18 15:06:34.450 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
-2021-06-18 15:06:34.451 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
-2021-06-18 15:06:34.454 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-06-18 15:06:34.483 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-06-18 15:06:34.591 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 8.511 seconds (JVM running for 11.244)
-2021-06-18 15:06:34.594 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+2021-06-21 16:12:30.023 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:12:30.023 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:12:30.034 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2021-06-21 16:12:30.144 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:12:31.228 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:13:23.344 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 23008 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:13:23.346 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:13:24.488 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:13:24.494 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:13:24.546 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33ms. Found 0 Redis repository interfaces.
+2021-06-21 16:13:25.070 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:13:25.077 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:13:25.078 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:13:25.078 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:13:25.199 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:13:25.199 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1814 ms
+2021-06-21 16:13:27.309 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:13:27.694 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:13:27.954 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:13:27.984 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:13:27.985 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:13:27.989 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:13:28.020 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:13:28.136 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.766 seconds (JVM running for 7.477)
+2021-06-21 16:13:28.138 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
 ===============启动成功了===============
-2021-06-18 15:07:07.758 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-18 15:07:07.759 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-06-18 15:07:07.769 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
-2021-06-18 15:07:40.326 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 17732 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
-2021-06-18 15:07:40.328 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
-2021-06-18 15:07:41.751 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
-2021-06-18 15:07:41.764 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
-2021-06-18 15:07:41.765 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-06-18 15:07:41.765 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-06-18 15:07:41.907 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-06-18 15:07:41.907 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1538 ms
-2021-06-18 15:07:43.682 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2021-06-18 15:07:43.746 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-18 15:07:43.877 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
-2021-06-18 15:07:43.898 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
-2021-06-18 15:07:43.899 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
-2021-06-18 15:07:43.902 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-06-18 15:07:43.938 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-06-18 15:07:44.068 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 4.337 seconds (JVM running for 5.672)
-2021-06-18 15:07:44.071 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+2021-06-21 16:13:38.039 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:13:38.039 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:13:38.048 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2021-06-21 16:13:38.163 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:13:39.198 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:14:52.566 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 23136 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:14:52.567 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:14:53.680 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:14:53.682 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:14:53.722 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2021-06-21 16:14:54.202 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:14:54.211 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:14:54.211 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:14:54.212 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:14:54.329 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:14:54.330 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1713 ms
+2021-06-21 16:14:56.166 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:14:56.275 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:14:56.724 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:14:56.745 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:14:56.746 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:14:56.749 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:14:56.771 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:14:56.867 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.063 seconds (JVM running for 6.535)
+2021-06-21 16:14:56.870 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
 ===============启动成功了===============
-2021-06-18 15:07:49.474 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-18 15:07:49.475 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-06-18 15:07:49.482 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
-2021-06-18 15:07:49.826 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-06-18 15:07:51.314 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-06-18 15:08:29.016 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 17392 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
-2021-06-18 15:08:29.017 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
-2021-06-18 15:08:30.613 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
-2021-06-18 15:08:30.623 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
-2021-06-18 15:08:30.626 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-06-18 15:08:30.628 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-06-18 15:08:30.850 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-06-18 15:08:30.850 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1748 ms
-2021-06-18 15:08:33.233 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2021-06-18 15:08:33.309 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-18 15:08:33.465 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
-2021-06-18 15:08:33.499 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
-2021-06-18 15:08:33.502 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
-2021-06-18 15:08:33.507 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-06-18 15:08:33.550 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-06-18 15:08:33.686 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.248 seconds (JVM running for 6.587)
-2021-06-18 15:08:33.691 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+2021-06-21 16:15:01.734 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:15:01.734 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:15:01.743 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2021-06-21 16:15:01.851 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:15:02.927 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:16:51.172 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 17436 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:16:51.174 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:16:52.442 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:16:52.445 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:16:52.488 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2021-06-21 16:16:52.994 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:16:53.002 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:16:53.002 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:16:53.002 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:16:53.118 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:16:53.118 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1892 ms
+2021-06-21 16:16:54.928 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:16:55.283 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:16:55.516 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:16:55.541 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:16:55.542 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:16:55.547 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:16:55.573 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:16:55.683 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.176 seconds (JVM running for 6.866)
+2021-06-21 16:16:55.685 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
 ===============启动成功了===============
-2021-06-18 15:09:25.923 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-18 15:09:25.923 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-06-18 15:09:25.931 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
-2021-06-18 15:09:26.019 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-06-18 15:09:27.128 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-06-18 16:04:30.207 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 896 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
-2021-06-18 16:04:30.208 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
-2021-06-18 16:04:32.447 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
-2021-06-18 16:04:32.459 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
-2021-06-18 16:04:32.460 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-06-18 16:04:32.460 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-06-18 16:04:32.585 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-06-18 16:04:32.585 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2304 ms
-2021-06-18 16:04:34.412 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2021-06-18 16:04:34.478 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-18 16:04:34.616 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
-2021-06-18 16:04:34.639 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
-2021-06-18 16:04:34.641 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
-2021-06-18 16:04:34.643 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-06-18 16:04:34.667 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-06-18 16:04:34.787 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 6.002 seconds (JVM running for 7.736)
-2021-06-18 16:04:34.790 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+2021-06-21 16:16:59.606 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:16:59.606 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:16:59.618 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2021-06-21 16:16:59.735 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:17:00.806 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:17:40.266 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 23176 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:17:40.268 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:17:41.424 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:17:41.429 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:17:41.471 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2021-06-21 16:17:41.938 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:17:41.945 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:17:41.946 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:17:41.946 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:17:42.064 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:17:42.065 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1739 ms
+2021-06-21 16:17:43.814 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:17:44.131 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:17:44.349 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:17:44.391 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:17:44.392 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:17:44.394 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:17:44.430 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:17:44.545 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 4.883 seconds (JVM running for 6.189)
+2021-06-21 16:17:44.548 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
 ===============启动成功了===============
-2021-06-18 16:09:45.135 [http-nio-9090-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-18 16:09:45.136 [http-nio-9090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-06-18 16:09:45.144 [http-nio-9090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
-2021-06-18 16:10:13.680 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-06-18 16:10:15.343 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-06-18 16:10:55.175 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 1540 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
-2021-06-18 16:10:55.176 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
-2021-06-18 16:10:58.043 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
-2021-06-18 16:10:58.059 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
-2021-06-18 16:10:58.060 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-06-18 16:10:58.060 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-06-18 16:10:58.220 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-06-18 16:10:58.220 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3007 ms
-2021-06-18 16:11:00.002 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2021-06-18 16:11:00.072 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-18 16:11:00.205 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
-2021-06-18 16:11:00.227 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
-2021-06-18 16:11:00.228 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
-2021-06-18 16:11:00.231 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-06-18 16:11:00.253 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-06-18 16:11:00.358 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 6.44 seconds (JVM running for 9.367)
-2021-06-18 16:11:00.361 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+2021-06-21 16:17:54.173 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:17:54.173 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:17:54.183 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2021-06-21 16:17:54.295 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:17:55.350 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:18:23.189 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 2632 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:18:23.191 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:18:24.267 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:18:24.269 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:18:24.320 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
+2021-06-21 16:18:24.809 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:18:24.816 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:18:24.817 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:18:24.817 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:18:24.933 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:18:24.933 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1696 ms
+2021-06-21 16:18:26.727 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:18:27.038 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:18:27.247 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:18:27.267 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:18:27.268 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:18:27.271 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:18:27.294 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:18:27.395 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 4.835 seconds (JVM running for 6.127)
+2021-06-21 16:18:27.398 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
 ===============启动成功了===============
-2021-06-18 16:11:29.378 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-18 16:11:29.379 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-06-18 16:11:29.391 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
-2021-06-18 16:11:29.531 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-06-18 16:11:30.689 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-06-18 16:13:49.021 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 1584 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
-2021-06-18 16:13:49.024 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
-2021-06-18 16:13:50.341 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
-2021-06-18 16:13:50.350 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
-2021-06-18 16:13:50.351 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-06-18 16:13:50.351 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-06-18 16:13:50.473 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-06-18 16:13:50.473 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1397 ms
-2021-06-18 16:13:52.252 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2021-06-18 16:13:52.319 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-18 16:13:52.453 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
-2021-06-18 16:13:52.477 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
-2021-06-18 16:13:52.478 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
-2021-06-18 16:13:52.482 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-06-18 16:13:52.505 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-06-18 16:13:52.616 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 4.261 seconds (JVM running for 5.663)
-2021-06-18 16:13:52.619 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+2021-06-21 16:18:31.559 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:18:31.561 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:18:31.567 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2021-06-21 16:18:31.674 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:18:32.702 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:20:12.563 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 18476 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:20:12.565 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:20:13.840 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:20:13.844 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:20:13.892 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 0 Redis repository interfaces.
+2021-06-21 16:20:14.518 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:20:14.527 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:20:14.528 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:20:14.528 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:20:14.654 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:20:14.654 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2027 ms
+2021-06-21 16:20:16.549 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:20:16.864 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:20:17.080 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:20:17.110 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:20:17.111 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:20:17.116 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:20:17.143 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:20:17.249 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.242 seconds (JVM running for 7.791)
+2021-06-21 16:20:17.251 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
 ===============启动成功了===============
-2021-06-18 16:14:32.880 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-18 16:14:32.880 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-06-18 16:14:32.889 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
-2021-06-18 16:14:32.990 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-06-18 16:14:33.993 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-06-18 16:15:08.361 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 17632 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
-2021-06-18 16:15:08.363 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
-2021-06-18 16:15:09.648 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
-2021-06-18 16:15:09.657 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
-2021-06-18 16:15:09.658 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-06-18 16:15:09.658 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-06-18 16:15:09.829 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-06-18 16:15:09.830 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1416 ms
-2021-06-18 16:15:11.725 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2021-06-18 16:15:11.797 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-18 16:15:11.940 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
-2021-06-18 16:15:11.960 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
-2021-06-18 16:15:11.961 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
-2021-06-18 16:15:11.964 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-06-18 16:15:11.990 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-06-18 16:15:12.093 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 4.381 seconds (JVM running for 5.749)
-2021-06-18 16:15:12.095 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+2021-06-21 16:20:32.417 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:20:32.418 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:20:32.428 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2021-06-21 16:20:32.535 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:20:33.608 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:23:37.678 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 17680 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:23:37.680 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:23:38.613 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:23:38.616 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:23:38.656 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2021-06-21 16:23:39.145 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:23:39.155 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:23:39.155 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:23:39.155 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:23:39.294 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:23:39.294 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1568 ms
+2021-06-21 16:23:41.037 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:23:41.346 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:23:41.562 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:23:41.583 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:23:41.584 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:23:41.587 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:23:41.612 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:23:41.715 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 4.626 seconds (JVM running for 5.923)
+2021-06-21 16:23:41.718 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
 ===============启动成功了===============
-2021-06-18 16:15:17.432 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-18 16:15:17.432 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-06-18 16:15:17.447 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 14 ms
-2021-06-18 16:15:17.552 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2021-06-18 16:15:18.618 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2021-06-18 16:25:00.024 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 16296 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
-2021-06-18 16:25:00.029 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
-2021-06-18 16:25:01.327 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
-2021-06-18 16:25:01.334 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
-2021-06-18 16:25:01.335 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-06-18 16:25:01.335 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-06-18 16:25:01.443 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-06-18 16:25:01.444 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1362 ms
-2021-06-18 16:25:03.228 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2021-06-18 16:25:03.298 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-06-18 16:25:03.444 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
-2021-06-18 16:25:03.466 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
-2021-06-18 16:25:03.467 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
-2021-06-18 16:25:03.471 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-06-18 16:25:03.496 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-06-18 16:25:03.613 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 4.237 seconds (JVM running for 5.587)
-2021-06-18 16:25:03.616 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+2021-06-21 16:23:49.531 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:23:49.532 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:23:49.539 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2021-06-21 16:23:49.660 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:23:50.730 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:26:22.044 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 22180 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:26:22.046 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:26:23.403 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:26:23.406 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:26:23.447 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2021-06-21 16:26:23.935 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:26:23.946 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:26:23.947 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:26:23.947 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:26:24.089 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:26:24.089 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1974 ms
+2021-06-21 16:26:25.984 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:26:26.305 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:26:26.537 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:26:26.563 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:26:26.564 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:26:26.567 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:26:26.596 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:26:26.701 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.512 seconds (JVM running for 7.298)
+2021-06-21 16:26:26.704 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
 ===============启动成功了===============
-2021-06-18 16:25:36.352 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-18 16:25:36.352 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-06-18 16:25:36.358 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2021-06-21 16:26:51.042 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:26:51.042 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:26:51.053 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2021-06-21 16:26:51.168 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:26:52.212 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:29:01.560 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 22980 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:29:01.563 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:29:03.144 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:29:03.147 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:29:03.190 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2021-06-21 16:29:03.694 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:29:03.706 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:29:03.707 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:29:03.707 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:29:03.841 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:29:03.841 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2151 ms
+2021-06-21 16:29:05.611 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:29:05.960 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:29:06.198 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:29:06.218 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:29:06.219 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:29:06.222 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:29:06.244 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:29:06.366 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.651 seconds (JVM running for 7.264)
+2021-06-21 16:29:06.371 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 16:29:17.897 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:29:17.898 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:29:17.906 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2021-06-21 16:29:18.017 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:29:19.043 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:32:03.400 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 10320 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:32:03.402 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:32:04.736 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:32:04.739 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:32:04.785 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 Redis repository interfaces.
+2021-06-21 16:32:05.357 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:32:05.365 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:32:05.366 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:32:05.366 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:32:05.482 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:32:05.483 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2019 ms
+2021-06-21 16:32:07.273 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:32:07.598 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:32:07.810 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:32:07.831 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:32:07.832 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:32:07.835 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:32:07.860 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:32:07.962 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.321 seconds (JVM running for 6.942)
+2021-06-21 16:32:07.965 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 16:32:11.564 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:32:11.566 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:32:11.575 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2021-06-21 16:32:11.698 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:32:12.733 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:33:22.233 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 16972 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:33:22.236 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:33:23.654 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:33:23.656 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:33:23.697 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2021-06-21 16:33:24.207 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:33:24.217 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:33:24.217 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:33:24.218 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:33:24.452 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:33:24.452 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2150 ms
+2021-06-21 16:33:26.344 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:33:26.666 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:33:26.903 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:33:26.925 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:33:26.926 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:33:26.928 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:33:26.952 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:33:27.076 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.637 seconds (JVM running for 7.022)
+2021-06-21 16:33:27.079 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 16:33:31.711 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:33:31.712 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:33:31.719 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2021-06-21 16:33:31.873 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:33:33.055 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:36:59.501 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 18180 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:36:59.503 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:37:07.008 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:37:07.012 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:37:07.139 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92ms. Found 0 Redis repository interfaces.
+2021-06-21 16:37:08.037 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:37:08.046 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:37:08.047 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:37:08.048 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:37:08.214 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:37:08.214 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8435 ms
+2021-06-21 16:37:10.474 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:37:11.088 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:37:11.704 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:37:11.735 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:37:11.736 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:37:11.739 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:37:11.762 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:37:11.930 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 17.071 seconds (JVM running for 25.905)
+2021-06-21 16:37:11.933 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 16:37:15.484 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:37:15.486 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:37:15.492 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2021-06-21 16:37:15.956 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:37:17.485 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:40:45.362 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 9212 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:40:45.363 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:40:46.705 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:40:46.708 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:40:46.756 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2021-06-21 16:40:47.354 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:40:47.363 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:40:47.363 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:40:47.364 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:40:47.635 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:40:47.636 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2222 ms
+2021-06-21 16:40:49.460 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:40:49.811 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:40:50.011 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:40:50.033 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:40:50.034 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:40:50.038 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:40:50.060 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:40:50.167 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.592 seconds (JVM running for 7.268)
+2021-06-21 16:40:50.169 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 16:40:54.703 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:40:54.704 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:40:54.715 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2021-06-21 16:40:54.847 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:40:55.895 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:41:32.295 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 2176 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:41:32.296 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:41:33.261 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:41:33.265 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:41:33.305 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2021-06-21 16:41:33.798 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:41:33.806 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:41:33.807 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:41:33.807 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:41:33.932 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:41:33.932 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1585 ms
+2021-06-21 16:41:35.722 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:41:35.828 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:41:36.288 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:41:36.309 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:41:36.310 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:41:36.313 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:41:36.338 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:41:36.463 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 4.841 seconds (JVM running for 6.15)
+2021-06-21 16:41:36.466 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 16:41:38.804 [http-nio-9090-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:41:38.804 [http-nio-9090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:41:38.811 [http-nio-9090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2021-06-21 16:41:38.920 [http-nio-9090-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:41:40.018 [http-nio-9090-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:42:23.861 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 328 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:42:23.863 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:42:25.161 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:42:25.164 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:42:25.206 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2021-06-21 16:42:25.698 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:42:25.706 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:42:25.707 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:42:25.707 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:42:25.857 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:42:25.857 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1936 ms
+2021-06-21 16:42:27.678 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:42:27.761 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:42:28.224 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:42:28.245 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:42:28.246 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:42:28.248 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:42:28.269 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:42:28.375 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.482 seconds (JVM running for 7.596)
+2021-06-21 16:42:28.377 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 16:42:32.712 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:42:32.713 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:42:32.723 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2021-06-21 16:42:32.840 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:42:33.973 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:43:26.461 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 15940 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:43:26.463 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:43:27.629 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:43:27.632 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:43:27.710 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51ms. Found 0 Redis repository interfaces.
+2021-06-21 16:43:28.452 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:43:28.461 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:43:28.463 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:43:28.463 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:43:28.597 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:43:28.597 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2076 ms
+2021-06-21 16:43:31.102 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:43:31.186 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:43:31.449 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:43:31.472 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:43:31.473 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:43:31.476 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:43:31.501 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:43:31.610 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.994 seconds (JVM running for 7.696)
+2021-06-21 16:43:31.612 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 16:43:34.862 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:43:34.862 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:43:34.879 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2021-06-21 16:43:35.048 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:43:36.637 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:47:29.147 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 3848 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:47:29.149 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:47:30.232 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:47:30.236 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:47:30.294 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39ms. Found 0 Redis repository interfaces.
+2021-06-21 16:47:30.910 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:47:30.920 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:47:30.921 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:47:30.921 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:47:31.050 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:47:31.050 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1846 ms
+2021-06-21 16:47:33.173 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:47:33.248 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:47:33.472 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:47:33.499 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:47:33.501 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:47:33.504 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:47:33.530 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:47:33.645 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.106 seconds (JVM running for 6.62)
+2021-06-21 16:47:33.648 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 16:47:37.152 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:47:37.154 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:47:37.164 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2021-06-21 16:47:37.329 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:47:38.516 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:48:41.309 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 22988 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:48:41.311 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:48:42.888 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:48:42.891 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:48:42.945 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39ms. Found 0 Redis repository interfaces.
+2021-06-21 16:48:43.495 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:48:43.503 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:48:43.503 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:48:43.504 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:48:43.636 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:48:43.636 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2278 ms
+2021-06-21 16:48:45.730 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:48:45.812 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:48:46.030 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:48:46.052 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:48:46.053 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:48:46.056 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:48:46.078 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:48:46.187 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.477 seconds (JVM running for 7.578)
+2021-06-21 16:48:46.189 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 16:49:59.611 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:49:59.612 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:49:59.624 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2021-06-21 16:49:59.744 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:50:00.792 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:50:54.563 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 6468 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:50:54.565 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:50:55.795 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:50:55.797 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:50:55.841 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2021-06-21 16:50:56.350 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:50:56.359 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:50:56.359 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:50:56.360 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:50:56.487 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:50:56.487 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1864 ms
+2021-06-21 16:50:58.505 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:50:58.599 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:50:58.844 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:50:58.865 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:50:58.866 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:50:58.871 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:50:58.894 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:50:59.003 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.256 seconds (JVM running for 6.727)
+2021-06-21 16:50:59.006 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 16:51:01.694 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:51:01.695 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:51:01.705 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2021-06-21 16:51:01.810 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:51:02.870 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 16:56:32.352 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 21752 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 16:56:32.355 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 16:56:33.714 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 16:56:33.717 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 16:56:33.767 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33ms. Found 0 Redis repository interfaces.
+2021-06-21 16:56:34.436 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 16:56:34.450 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:56:34.450 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 16:56:34.451 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 16:56:34.620 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 16:56:34.620 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2133 ms
+2021-06-21 16:56:37.404 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 16:56:37.533 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 16:56:37.797 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 16:56:37.831 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 16:56:37.833 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 16:56:37.836 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 16:56:37.862 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 16:56:38.020 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 6.555 seconds (JVM running for 8.195)
+2021-06-21 16:56:38.025 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 16:56:45.272 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 16:56:45.273 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 16:56:45.285 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2021-06-21 16:56:45.400 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 16:56:46.502 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 17:01:15.694 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 15508 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 17:01:15.695 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 17:01:17.045 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 17:01:17.047 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 17:01:17.088 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2021-06-21 17:01:17.593 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 17:01:17.601 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:01:17.602 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 17:01:17.602 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 17:01:17.716 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 17:01:17.716 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1977 ms
+2021-06-21 17:01:20.019 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 17:01:20.103 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 17:01:20.334 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:01:20.356 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 17:01:20.357 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 17:01:20.360 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 17:01:20.383 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 17:01:20.480 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.7 seconds (JVM running for 7.155)
+2021-06-21 17:01:20.482 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 17:01:39.970 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 17:01:39.970 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 17:01:39.981 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2021-06-21 17:01:40.105 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 17:01:41.202 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 17:02:20.431 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 20552 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 17:02:20.432 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 17:02:21.522 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 17:02:21.524 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 17:02:21.565 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2021-06-21 17:02:22.026 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 17:02:22.035 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:02:22.035 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 17:02:22.036 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 17:02:22.158 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 17:02:22.158 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1681 ms
+2021-06-21 17:02:24.257 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 17:02:24.336 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 17:02:24.626 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:02:24.653 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 17:02:24.655 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 17:02:24.658 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 17:02:24.690 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 17:02:24.822 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.088 seconds (JVM running for 6.422)
+2021-06-21 17:02:24.826 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 17:05:06.701 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 17:05:06.701 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 17:05:06.709 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2021-06-21 17:05:06.818 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 17:05:07.842 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 17:09:01.677 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 20840 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 17:09:01.679 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 17:09:02.784 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 17:09:02.787 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 17:09:02.828 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2021-06-21 17:09:03.366 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 17:09:03.374 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:09:03.375 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 17:09:03.375 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 17:09:03.493 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 17:09:03.494 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1767 ms
+2021-06-21 17:09:05.578 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 17:09:05.658 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 17:09:05.930 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:09:05.952 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 17:09:05.953 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 17:09:05.956 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 17:09:05.981 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 17:09:06.100 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.172 seconds (JVM running for 6.771)
+2021-06-21 17:09:06.103 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 17:14:11.220 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 17:14:11.221 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 17:14:11.237 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2021-06-21 17:14:11.371 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 17:14:12.377 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 17:22:11.823 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 8316 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 17:22:11.825 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 17:22:13.328 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 17:22:13.330 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 17:22:13.515 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 164ms. Found 0 Redis repository interfaces.
+2021-06-21 17:22:14.312 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 17:22:14.329 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:22:14.330 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 17:22:14.331 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 17:22:14.951 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 17:22:14.951 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3079 ms
+2021-06-21 17:22:22.705 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 7604 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 17:22:22.707 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 17:22:23.902 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 17:22:23.905 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 17:22:23.944 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2021-06-21 17:22:24.430 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 17:22:24.441 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:22:24.441 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 17:22:24.441 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 17:22:24.562 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 17:22:24.562 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1803 ms
+2021-06-21 17:22:26.530 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 17:22:26.607 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 17:22:26.870 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:22:26.892 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 17:22:26.893 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 17:22:26.896 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 17:22:26.922 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 17:22:27.046 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.07 seconds (JVM running for 6.698)
+2021-06-21 17:22:27.048 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 17:24:14.099 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 17:24:14.099 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 17:24:14.110 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2021-06-21 17:24:14.227 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 17:24:15.261 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 17:26:52.078 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 20640 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 17:26:52.080 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 17:26:53.328 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 17:26:53.331 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 17:26:53.372 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2021-06-21 17:26:53.844 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 17:26:53.852 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:26:53.853 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 17:26:53.853 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 17:26:53.971 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 17:26:53.972 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1835 ms
+2021-06-21 17:26:55.991 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 17:26:56.071 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 17:26:56.332 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:26:56.353 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 17:26:56.354 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 17:26:56.357 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 17:26:56.381 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 17:26:56.488 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.239 seconds (JVM running for 6.651)
+2021-06-21 17:26:56.491 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 17:44:46.172 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 17892 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 17:44:46.175 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 17:44:47.307 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 17:44:47.312 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 17:44:47.370 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
+2021-06-21 17:44:47.905 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 17:44:47.913 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:44:47.914 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 17:44:47.915 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 17:44:48.039 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 17:44:48.040 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1799 ms
+2021-06-21 17:44:50.260 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 17:44:50.345 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 17:44:50.599 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:44:50.622 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 17:44:50.623 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 17:44:50.626 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 17:44:50.651 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 17:44:50.777 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 5.553 seconds (JVM running for 7.378)
+2021-06-21 17:44:50.779 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 17:44:57.315 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 17:44:57.316 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 17:44:57.324 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2021-06-21 17:44:57.440 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 17:44:58.582 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 17:47:01.491 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 12148 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 17:47:01.493 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 17:47:02.482 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 17:47:02.484 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 17:47:02.526 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2021-06-21 17:47:02.989 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 17:47:02.997 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:47:02.998 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 17:47:02.998 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 17:47:03.120 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 17:47:03.120 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1581 ms
+2021-06-21 17:47:05.081 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 17:47:05.159 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 17:47:05.370 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:47:05.392 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 17:47:05.393 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 17:47:05.396 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 17:47:05.418 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 17:47:05.520 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 4.688 seconds (JVM running for 5.975)
+2021-06-21 17:47:05.522 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 17:47:17.226 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 17:47:17.226 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 17:47:17.240 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2021-06-21 17:47:17.387 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 17:47:18.533 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 17:48:02.410 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 19728 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 17:48:02.412 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 17:48:03.461 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 17:48:03.464 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 17:48:03.505 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2021-06-21 17:48:03.978 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 17:48:03.986 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:48:03.987 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 17:48:03.987 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 17:48:04.104 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 17:48:04.105 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1631 ms
+2021-06-21 17:48:06.092 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 17:48:06.182 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 17:48:06.440 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:48:06.459 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 17:48:06.460 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 17:48:06.463 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 17:48:06.485 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 17:48:06.595 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 4.868 seconds (JVM running for 6.289)
+2021-06-21 17:48:06.599 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 17:48:11.147 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 17:48:11.148 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 17:48:11.158 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2021-06-21 17:48:11.273 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 17:48:12.339 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 17:48:54.106 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 21772 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 17:48:54.107 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 17:48:55.027 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 17:48:55.030 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 17:48:55.070 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2021-06-21 17:48:55.569 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 17:48:55.577 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:48:55.577 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 17:48:55.578 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 17:48:55.698 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 17:48:55.699 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1553 ms
+2021-06-21 17:48:57.663 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 17:48:57.742 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 17:48:57.956 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:48:57.978 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 17:48:57.979 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 17:48:57.982 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 17:48:58.004 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 17:48:58.102 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 4.635 seconds (JVM running for 6.408)
+2021-06-21 17:48:58.105 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 17:49:01.216 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 17:49:01.217 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 17:49:01.229 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2021-06-21 17:49:01.345 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 17:49:02.414 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-21 17:57:52.187 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Starting ArchetypeLtPdApplication on LAPTOP-M5HOM3R5 with PID 10740 (C:\Users\LT\Desktop\boran_erp\boran_erp-PD\target\classes started by LT in C:\Users\LT\Desktop\boran_erp)
+2021-06-21 17:57:52.188 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - No active profile set, falling back to default profiles: default
+2021-06-21 17:57:53.150 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-21 17:57:53.152 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-21 17:57:53.196 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2021-06-21 17:57:53.725 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2021-06-21 17:57:53.735 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:57:53.735 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-21 17:57:53.736 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-06-21 17:57:53.865 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-21 17:57:53.866 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1634 ms
+2021-06-21 17:57:56.917 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-06-21 17:57:57.051 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 17:57:57.410 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2021-06-21 17:57:57.469 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2021-06-21 17:57:57.471 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-06-21 17:57:57.480 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-21 17:57:57.517 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-21 17:57:57.781 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - Started ArchetypeLtPdApplication in 6.207 seconds (JVM running for 7.561)
+2021-06-21 17:57:57.785 [main] INFO  com.boran.erp.ArchetypeLtPdApplication - 
+===============启动成功了===============
+2021-06-21 18:03:00.435 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 18:03:00.435 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-06-21 18:03:00.446 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2021-06-21 18:03:00.553 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-21 18:03:01.824 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
