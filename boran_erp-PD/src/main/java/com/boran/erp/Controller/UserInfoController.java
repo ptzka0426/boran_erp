@@ -57,17 +57,15 @@ public class UserInfoController {
             if (userInfos.size() <= 0) {
                 return AjaxJson.getError("用户名或密码错误！");
             } else {
-                //判断是否已登录，
-                System.out.println(StpUtil.isLogin());
                 if (!StpUtil.isLogin()) {
                     StpUtil.setLoginId(userInfos.get(0).getId(), new SaLoginModel()
-                            .setDevice("PC")                // 此次登录的客户端设备标识, 用于[同端互斥登录]时指定此次登录的设备名称
+                            .setDevice("PC")                  // 此次登录的客户端设备标识, 用于[同端互斥登录]时指定此次登录的设备名称
                             .setIsLastingCookie(true)        // 是否为持久Cookie（临时Cookie在浏览器关闭时会自动删除，持久Cookie在重新打开后依然存在）
-                            .setTimeout(60 * 60)    // 指定此次登录token的有效期, 单位:（60*60）秒 （如未指定，自动取全局配置的timeout值）
+                            .setTimeout(60 * 60)            // 指定此次登录token的有效期, 单位:（60*60）秒 （如未指定，自动取全局配置的timeout值）
                     );
                 }
-                /*System.out.println(StpUtil.hasRole("超级管理员"));*/
-                 System.out.println(StpUtil.hasPermission("超级管理员:Insert"));
+                System.out.println(StpUtil.hasRole("超级管理员"));
+                /*System.out.println(StpUtil.hasPermission("超级管理员:Insert"));*/
                 /*System.out.println(StpUtil.hasPermission("普通用户:Delete"));*/
                 /*satoken令牌认证*/
                 // return AjaxJson.getSuccess("登陆成功", "{token:" + StpUtil.getTokenName() + ",tokenvalue:" + StpUtil.getTokenValue() + "}");

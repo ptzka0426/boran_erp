@@ -55,7 +55,7 @@ public class StpInterfaceImpl implements StpInterface {
                         redisUtil.lLeftPushAll("sa_token_role" + loginId, Role);
                     });
                     //设置过期时间
-                    redisUtil.expire("sa_token_power" + loginId, 790, TimeUnit.SECONDS);
+                    redisUtil.expire("sa_token_role" + loginId, 790, TimeUnit.SECONDS);
                 }
                 //角色——》权限
                 List<String> pwr = new ArrayList<>();
@@ -76,24 +76,8 @@ public class StpInterfaceImpl implements StpInterface {
                 return pwr;
             }
         } catch (Exception e) {
-            System.out.println("权限认证异常......");
+            System.out.println("角色权限认证异常......");
         }
-        /*HashMap<String, List<String>> listHashMap = new HashMap<>();
-        List<String> list = new ArrayList<String>();
-        list.add("101");
-        list.add("user-add");
-        list.add("user-delete");
-        list.add("user-update");
-        list.add("user-get");
-        list.add("article-get");
-        listHashMap.put("10001", list);
-        list = new ArrayList<>();
-        list.add("user-add");
-        listHashMap.put("10002", list);
-        // list模拟数据库权限
-        if (loginKey.equals("login")) {
-            return listHashMap.get(loginId);
-        }*/
         return null;
     }
 
@@ -103,29 +87,22 @@ public class StpInterfaceImpl implements StpInterface {
     @Override
     public List<String> getRoleList(Object loginId, String loginKey) {
         try {
-            if (loginKey.equals("login")) {
-                return userrole.RoleName(Integer.parseInt(loginId.toString()));
+            //拿到角色
+            List<String> RoleName = new ArrayList<>();//userrole.RoleName(Integer.parseInt(loginId.toString()));
+            if (redisUtil.hasKey("sa_token_role" + loginId)) {//判断角色用户是否有缓存
+                RoleName = redisUtil.lRange("sa_token_role" + loginId, 0, -1);
+            } else {
+                RoleName = userrole.RoleName(Integer.parseInt(loginId.toString()));
+                RoleName.forEach(Role -> {
+                    redisUtil.lLeftPushAll("sa_token_role" + loginId, Role);
+                });
+                //设置过期时间
+                redisUtil.expire("sa_token_role" + loginId, 790, TimeUnit.SECONDS);
             }
+            return RoleName;
         } catch (Exception e) {
-            return null;
+            System.out.println("角色认证异常......");
         }
-        /*List<String> lists = new ArrayList<String>();
-        lists.add("10001");
-        lists.add("10002");
-        HashMap<String, List<String>> listHashMap = new HashMap<>();
-        List<String> list = new ArrayList<String>();
-        list.add("admin");
-        list.add("user");
-        list.add("super-admin");
-        listHashMap.put("10001", list);
-        list = new ArrayList<>();
-        list.add("user");
-        listHashMap.put("10002", list);
-        // list模拟数据库角色
-        System.out.println(loginKey);
-        if (loginKey.equals("login")) {
-            return listHashMap.get(loginId);
-        }*/
         return null;
     }
 
