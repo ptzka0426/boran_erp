@@ -39,17 +39,17 @@ public class SaTokenConfigure implements WebMvcConfigurer {
                     "/swagger-resources/configuration/ui/**",
                     "/swagger-resources/configuration/security"
             ), () -> StpUtil.checkLogin());
-
+            //继承maven的aop注解鉴权
             // 角色认证 -- 拦截以 admin 开头的路由，必须具备[admin]角色或者[super-admin]角色才可以通过认证
-            //SaRouterUtil.match("/admin/**", () -> StpUtil.checkRoleOr("admin", "super-admin"));
+//            SaRouterUtil.match("/admin/**", () -> StpUtil.checkRoleOr("admin", "super-admin"));
 
             // 权限认证 -- 不同模块, 校验不同权限
-            SaRouterUtil.match("/user/**", () -> StpUtil.checkPermission("user"));
-            SaRouterUtil.match("/admin/**", () -> StpUtil.checkPermission("admin"));
-            SaRouterUtil.match("/goods/**", () -> StpUtil.checkPermission("goods"));
-            SaRouterUtil.match("/orders/**", () -> StpUtil.checkPermission("orders"));
-            SaRouterUtil.match("/notice/**", () -> StpUtil.checkPermission("notice"));
-            SaRouterUtil.match("/comment/**", () -> StpUtil.checkPermission("comment"));
+//            SaRouterUtil.match("/userinfo/login/**", () -> StpUtil.checkPermission("login"));
+//            SaRouterUtil.match("/admin/**", () -> StpUtil.checkPermission("admin"));
+//            SaRouterUtil.match("/goods/**", () -> StpUtil.checkPermission("goods"));
+//            SaRouterUtil.match("/orders/**", () -> StpUtil.checkPermission("orders"));
+//            SaRouterUtil.match("/notice/**", () -> StpUtil.checkPermission("notice"));
+//            SaRouterUtil.match("/comment/**", () -> StpUtil.checkPermission("comment"));
 
             // 匹配 restful 风格路由
             SaRouterUtil.match("/article/get/{id}", () -> StpUtil.checkPermission("article"));
@@ -65,7 +65,6 @@ public class SaTokenConfigure implements WebMvcConfigurer {
             SaRouterUtil.match("/user/**", () -> StpUtil.checkLogin());
 
         })).addPathPatterns("/**");
-
         /* registry.addInterceptor(new SaAnnotationInterceptor()).addPathPatterns("/**");*/
     }
 }

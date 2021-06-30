@@ -1,6 +1,9 @@
 package com.boran.erp.Controller;
 
 import cn.dev33.satoken.annotation.SaCheckLogin;
+import cn.dev33.satoken.annotation.SaCheckPermission;
+import cn.dev33.satoken.annotation.SaCheckRole;
+import cn.dev33.satoken.annotation.SaMode;
 import cn.dev33.satoken.exception.NotLoginException;
 import cn.dev33.satoken.stp.SaLoginModel;
 import cn.dev33.satoken.stp.StpUtil;
@@ -49,9 +52,6 @@ public class UserInfoController {
     @ApiOperation(value = "登陆")
     @ApiOperationSupport(order = 1)
     public AjaxJson login(@RequestParam Map<String, Object> userInfo) {
-/*        userInfo.forEach((key, value) -> {
-            System.out.println(key);
-        });*/
         if (userInfo.containsKey("user_yhm") && userInfo.containsKey("user_pwd")) {
             List<UserInfo> userInfos = userInfoService.listByMap(userInfo);
             if (userInfos.size() <= 0) {
@@ -64,7 +64,6 @@ public class UserInfoController {
                             .setTimeout(60 * 60)            // 指定此次登录token的有效期, 单位:（60*60）秒 （如未指定，自动取全局配置的timeout值）
                     );
                 }
-                System.out.println(StpUtil.hasRole("超级管理员"));
                 /*System.out.println(StpUtil.hasPermission("超级管理员:Insert"));*/
                 /*System.out.println(StpUtil.hasPermission("普通用户:Delete"));*/
                 /*satoken令牌认证*/
@@ -76,12 +75,13 @@ public class UserInfoController {
     }
 
     @ApiOperation(value = "测试分页")
-    @RequestMapping(value = "lists", method = RequestMethod.POST)
+    @RequestMapping(value = "/lists", method = RequestMethod.POST)
     @ApiOperationSupport(order = 100)
-    @SaCheckLogin//判断是否登陆
+    /*    @SaCheckLogin//判断是否登陆*/
+    /*    @SaCheckPermission(value = {"user-add", "user-all", "user-delete"}, mode = SaMode.OR)*/
+    @SaCheckRole(value = {"超级管理员", "普通用户"}, mode = SaMode.AND)
     public AjaxJson selectAndlist(int id, int pageNo, int pageSize, int desc) {
         IPage<UserInfo> page = new Page<>(pageNo, pageSize);
-
         QueryWrapper<UserInfo> wrapper = new QueryWrapper<>();
         //做条件筛选
         if (id != 1) {

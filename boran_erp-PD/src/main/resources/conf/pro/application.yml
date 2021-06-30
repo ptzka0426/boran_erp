@@ -112,6 +112,17 @@ knife4j:
     password: boran123
 
 
+
+# 异步线程配置
+# 配置核心线程数
+async:
+  executor:
+    thread:
+      core_pool_size: 5
+      max_pool_size: 5
+      queue_capacity: 5
+      name:
+        prefix: async-service-
 #      自定义注释测试
 person:
   lastName: hello
