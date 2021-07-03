@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b203db51-bc87-4bc6-bd66-de367cd2dc3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/ExecutorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/VisiableThreadPoolTaskExecutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/sa_token/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/sa_token/SaTokenConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/ExecutorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/ExecutorConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Controller/UserInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/mapper/UserRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/mapper/UserRoleMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/service/UserInfoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/service/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/service/impl/UserInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/conf/pro/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/conf/pro/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/springboot_debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/springboot_debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web-debug-2021-06-16.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web-info-2021-06-16.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web-warn-2021-06-16.0.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_info.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_warn.log" afterDir="false" />
     </list>
@@ -144,7 +143,8 @@
       <workItem from="1624002268515" duration="31449000" />
       <workItem from="1624411065626" duration="11517000" />
       <workItem from="1625039586754" duration="60000" />
-      <workItem from="1625042483199" duration="1900000" />
+      <workItem from="1625042483199" duration="2046000" />
+      <workItem from="1625044876677" duration="5133000" />
     </task>
     <task id="LOCAL-00001" summary="sa-token权限奉陪完成，下一步加入没有权限的403返回和redis的缓存">
       <created>1624004221137</created>
@@ -167,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624269931707</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1.sa-token权限奉陪完成，全局异常返回完成，redis缓存完成,加入线程池异步">
+      <created>1625044714846</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1625044714846</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +184,7 @@
     <MESSAGE value="sa-token权限奉陪完成，下一步加入没有权限的403返回和redis的缓存" />
     <MESSAGE value="sa-token权限奉陪完成，全局异常返回完成，redis的缓存未完成" />
     <MESSAGE value="1.sa-token权限奉陪完成，全局异常返回完成，redis缓存完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.sa-token权限奉陪完成，全局异常返回完成，redis缓存完成" />
+    <MESSAGE value="1.sa-token权限奉陪完成，全局异常返回完成，redis缓存完成,加入线程池异步" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.sa-token权限奉陪完成，全局异常返回完成，redis缓存完成,加入线程池异步" />
   </component>
 </project>

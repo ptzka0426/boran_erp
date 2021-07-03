@@ -21,6 +21,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -52,6 +53,8 @@ public class UserInfoController {
     @ApiOperation(value = "登陆")
     @ApiOperationSupport(order = 1)
     public AjaxJson login(@RequestParam Map<String, Object> userInfo) {
+        /*System.out.println(userInfoService.sayHello("123")+"---------------------");
+        userInfoService.executeAsync();*/
         if (userInfo.containsKey("user_yhm") && userInfo.containsKey("user_pwd")) {
             List<UserInfo> userInfos = userInfoService.listByMap(userInfo);
             if (userInfos.size() <= 0) {
@@ -96,4 +99,5 @@ public class UserInfoController {
         }
         return AjaxJson.getSuccess("分页", userInfoService.page(page, wrapper).getRecords().toArray());
     }
+
 }
