@@ -1,0 +1,19 @@
+server:
+  port: 9091
+spring:
+  application:
+    name: consume-nacos-service #注册到注册中心的名字 消费者
+  cloud:
+    nacos:
+      discovery:
+        server-addr:  localhost:8848 #nacos的ip地址
+    # 配置 Sentinel
+#    sentinel:
+#      transport:
+#        dashboard: localhost:8849 #8.129.51.229:8849
+#        #        port: 8888
+#        clientIp: 192.168.2.8
+#      eager: true  #取消控制台懒加载，默认false要刷新请求sentinel才会在面板显示
+#feign:
+#  sentinel:
+#    enabled: true
