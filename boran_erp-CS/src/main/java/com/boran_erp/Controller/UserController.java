@@ -1,7 +1,7 @@
-package com.boran_erp.CS.Controller;
+package com.boran_erp.Controller;
 
-import com.boran_erp.CS.Client.AjaxJson;
-import com.boran_erp.CS.Client.userClient;
+import com.boran_erp.Client.AjaxJson;
+import com.boran_erp.Client.userClient;
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
