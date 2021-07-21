@@ -7,13 +7,22 @@ spring:
     nacos:
       discovery:
         server-addr:  localhost:8848 #nacos的ip地址
-    # 配置 Sentinel
-#    sentinel:
-#      transport:
-#        dashboard: localhost:8849 #8.129.51.229:8849
-#        #        port: 8888
-#        clientIp: 192.168.2.8
-#      eager: true  #取消控制台懒加载，默认false要刷新请求sentinel才会在面板显示
+#     配置 Sentinel
+    sentinel:
+      transport:
+        dashboard: localhost:8849
+        #默认8719端口，假如被占用会自动从8719开始依次扫描，直至找到未被占用的端口
+        port: 8720
+        clientIp: localhost
+      eager: true  #取消控制台懒加载，默认false要刷新请求sentinel才会在面板显示
 #feign:
 #  sentinel:
 #    enabled: true
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+  sentinel:
+    enabled: true

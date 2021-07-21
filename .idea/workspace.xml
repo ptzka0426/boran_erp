@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b203db51-bc87-4bc6-bd66-de367cd2dc3d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran_erp/Client/userClientImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran_erp/Handler/SentinelHandlersClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boran_erp-CS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran_erp/BoranErpCsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran_erp/BoranErpCsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran_erp/Client/AjaxJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran_erp/AjaxJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran_erp/Client/userClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran_erp/Client/userClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran_erp/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran_erp/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-PD/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/ExecutorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/ExecutorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/VisiableThreadPoolTaskExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/VisiableThreadPoolTaskExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/conf/pro/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/conf/pro/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/springboot_debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/springboot_debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_warn.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="mybatis-cfg.xml" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -97,7 +113,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ArchetypeLtPdApplication">
+  <component name="RunManager" selected="Spring Boot.BoranErpCsApplication">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -111,8 +127,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArchetypeLtPdApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+    <configuration name="ArchetypeLtPdApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="boran_erp-PD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.boran.erp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.boran.erp.ArchetypeLtPdApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,7 +142,7 @@
     </configuration>
     <configuration name="BoranErpCsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="boran_erp-CS" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.boran_erp.CS.BoranErpCsApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.boran_erp.BoranErpCsApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,7 +171,7 @@
       <workItem from="1625795200740" duration="588000" />
       <workItem from="1626227296899" duration="3106000" />
       <workItem from="1626676454757" duration="4150000" />
-      <workItem from="1626760671713" duration="12026000" />
+      <workItem from="1626760671713" duration="30309000" />
     </task>
     <task id="LOCAL-00001" summary="sa-token权限奉陪完成，下一步加入没有权限的403返回和redis的缓存">
       <created>1624004221137</created>
@@ -200,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626832054436</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="整合nacos">
+      <created>1626832445088</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1626832445088</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

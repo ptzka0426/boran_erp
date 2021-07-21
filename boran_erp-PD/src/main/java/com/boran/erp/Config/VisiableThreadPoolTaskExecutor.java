@@ -13,6 +13,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 /**
  * @Author LT
  * @create 2021-07-03 15:44
+ * 线程池的打印
  */
 public class VisiableThreadPoolTaskExecutor extends ThreadPoolTaskExecutor {
     private static final Logger logger = LoggerFactory.getLogger(VisiableThreadPoolTaskExecutor.class);

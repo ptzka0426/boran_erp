@@ -1,4 +1,4 @@
-package com.boran_erp.Client;
+package com.boran_erp;
 
 import java.io.Serializable;
 import java.util.List;

@@ -1,12 +1,9 @@
 package com.boran_erp.Controller;
 
-import com.boran_erp.Client.AjaxJson;
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.boran_erp.AjaxJson;
 import com.boran_erp.Client.userClient;
-import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
-import io.swagger.annotations.ApiOperation;
+import com.boran_erp.Handler.SentinelHandlersClass;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.web.bind.annotation.*;
@@ -20,19 +17,29 @@ import java.util.Map;
 @RestController
 @RequestMapping("/userinfo")
 @Scope("prototype")//多例
-@Api(tags = "消费者")
 public class UserController {
     @Autowired
     private userClient userClient;
 
+    /*熔断器的value和资源名都指向方法名（与访问接口value无关）*/
+    /*@SentinelResource(value = "login", fallback = "handleException", blockHandler = "handleError")*/
+    @SentinelResource(value = "login",
+            blockHandlerClass = SentinelHandlersClass.class, //限流兜底方法所在类
+            blockHandler = "handleException",  //限流时兜底方法
+            fallbackClass = SentinelHandlersClass.class, //异常兜底放方法所在类
+            fallback = "handleError")  //异常时兜底
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    @ApiImplicitParams({
-            @ApiImplicitParam(name = "user_yhm", value = "用户名", required = true),
-            @ApiImplicitParam(name = "user_pwd", value = "密码", required = true)
-    })
-    @ApiOperation(value = "登陆")
-    @ApiOperationSupport(order = 1)
     public AjaxJson login(@RequestParam Map<String, Object> userInfo) {
-      return userClient.login(userInfo);
+        return userClient.login(userInfo);
     }
+
+   /* public AjaxJson fallbackHandler(Map<String, Object> userInfo, BlockException exception) {
+        System.out.println("product-service 服务的 selectProductById 方法出现异常，异常信息如下：" + exception);
+        return AjaxJson.getError("服务限流处理-托底数据");
+    }
+
+    public AjaxJson selectProductByIdFallback(Map<String, Object> userInfo, BlockException exception) {
+        System.out.println("product-service 服务的 selectProductById 方法出现异常，异常信息如下：" + exception);
+        return AjaxJson.getError("服务熔断降级处理-托底数据");
+    }*/
 }
