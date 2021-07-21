@@ -1,163 +1,158 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-      
-  <modelVersion>4.0.0</modelVersion>
-      
-  <!-- ________ª˘±æ–≈œ¢__________-->
-      
-  <!--œÓƒøªÚ’ﬂ◊È÷ØµƒŒ®“ª±Í÷æ-->
-      
-  <groupId>boran_erp</groupId>
-      
-  <!--œÓƒøµƒÕ®”√√˚≥∆-->
-      
-  <artifactId>boran_erp</artifactId>
-      
-  <!--œÓƒøµƒ∞Ê±æ-->
-      
-  <version>1.0-SNAPSHOT</version>
-      
-  <!--¥Ú∞¸µƒª˙÷∆-->
-      
-  <!--mavenµƒ∏∏π§≥Ãpackaging±Í«©µƒ÷µ±ÿ–ÎŒ™pom-->
-      
-  <packaging>pom</packaging>
-      
-  <description>Archetypec≥ıº∂π«º‹</description>
-      
-  <!-- ºØ÷–∂®“Â“¿¿µ∞Ê±æ∫≈£¨∂®“Â Ù–‘÷µ-->
-      
-  <properties>
-            
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-            
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-            
-    <java.version>1.8</java.version>
-            
-    <spring.boot.version>2.1.1.RELEASE</spring.boot.version>
-            
-    <maven.compiler.source>14</maven.compiler.source>
-            
-    <maven.compiler.target>14</maven.compiler.target>
-        
-  </properties>
-      
-  <!-- ∞Ê±æÀµ√˜£∫’‚¿ÔÕ≥“ªπ‹¿Ì“¿¿µµƒ∞Ê±æ∫≈ -->
-      
-  <dependencyManagement>
-            
-    <dependencies>
-                  
-      <!-- SpringBootµƒ“¿¿µ≈‰÷√-->
-                  
-      <dependency>
-                        
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+
+    <!-- ________Âü∫Êú¨‰ø°ÊÅØ__________-->
+    <!--È°πÁõÆÊàñËÄÖÁªÑÁªáÁöÑÂîØ‰∏ÄÊ†áÂøó-->
+
+    <groupId>boran_erp</groupId>
+
+    <!--È°πÁõÆÁöÑÈÄöÁî®ÂêçÁß∞-->
+    <artifactId>boran_erp</artifactId>
+
+    <!--È°πÁõÆÁöÑÁâàÊú¨-->
+
+    <version>1.0-SNAPSHOT</version>
+
+    <!--ÊâìÂåÖÁöÑÊú∫Âà∂-->
+    <!--mavenÁöÑÁà∂Â∑•Á®ãpackagingÊ†áÁ≠æÁöÑÂÄºÂøÖÈ°ª‰∏∫pom-->
+
+    <packaging>pom</packaging>
+
+    <description>ArchetypecÂàùÁ∫ßÈ™®Êû∂</description>
+
+    <!-- ÈõÜ‰∏≠ÂÆö‰πâ‰æùËµñÁâàÊú¨Âè∑ÔºåÂÆö‰πâÂ±ûÊÄßÂÄº-->
+
+    <properties>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <java.version>1.8</java.version>
+
+        <spring.boot.version>2.1.1.RELEASE</spring.boot.version>
+
+        <maven.compiler.source>14</maven.compiler.source>
+
+        <maven.compiler.target>14</maven.compiler.target>
+
+    </properties>
+
+    <!-- ÁâàÊú¨ËØ¥ÊòéÔºöËøôÈáåÁªü‰∏ÄÁÆ°ÁêÜ‰æùËµñÁöÑÁâàÊú¨Âè∑ -->
+    <dependencyManagement>
+
+        <dependencies>
+
+            <!-- SpringBootÁöÑ‰æùËµñÈÖçÁΩÆ-->
+
+            <dependency>
+
+                <groupId>org.springframework.boot</groupId>
+
+                <artifactId>spring-boot-dependencies</artifactId>
+
+                <version>${spring.boot.version}</version>
+
+            </dependency>
+
+            <!-- SpringBoot WebÂÆπÂô® -->
+
+            <dependency>
+
+                <groupId>org.springframework.boot</groupId>
+
+                <artifactId>spring-boot-starter-web</artifactId>
+
+                <version>2.3.5.RELEASE</version>
+
+            </dependency>
+
+            <!--Êï∞ÊçÆÂ∫ì Mybatis-plus-->
+
+            <dependency>
+
+                <groupId>com.baomidou</groupId>
+
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+
+                <version>3.4.1</version>
+
+            </dependency>
+
+            <dependency>
+
+                <groupId>com.baomidou</groupId>
+
+                <artifactId>mybatis-plus-generator</artifactId>
+
+                <version>3.4.1</version>
+
+            </dependency>
+
+            <dependency>
+
+                <groupId>mysql</groupId>
+
+                <artifactId>mysql-connector-java</artifactId>
+
+                <scope>runtime</scope>
+
+                <version>8.0.21</version>
+
+            </dependency>
+
+            <!--Â∞èËæ£Ê§íÂÆû‰ΩìÊ≥®Ëß£-->
+
+            <dependency>
+
+                <groupId>org.projectlombok</groupId>
+
+                <artifactId>lombok</artifactId>
+
+                <optional>true</optional>
+
+                <version>1.18.18</version>
+
+            </dependency>
+
+            <!--MultipartFile file Êñá‰ª∂-->
+
+            <dependency>
+
+                <groupId>commons-fileupload</groupId>
+
+                <artifactId>commons-fileupload</artifactId>
+
+                <version>1.4</version>
+
+            </dependency>
+
+            <!--ÔøΩÔøΩ÷æ-->
+
+        </dependencies>
+
+    </dependencyManagement>
+
+    <!--springbootÁöÑÂ≠êÂ∑•Á®ãÈÖçÁΩÆ-->
+    <parent>
+
         <groupId>org.springframework.boot</groupId>
-                        
-        <artifactId>spring-boot-dependencies</artifactId>
-                        
-        <version>${spring.boot.version}</version>
-                    
-      </dependency>
-                  
-      <!-- SpringBoot Web»›∆˜ -->
-                  
-      <dependency>
-                        
-        <groupId>org.springframework.boot</groupId>
-                        
-        <artifactId>spring-boot-starter-web</artifactId>
-                        
+
+        <artifactId>spring-boot-starter-parent</artifactId>
+
         <version>2.3.5.RELEASE</version>
-                    
-      </dependency>
-                  
-      <!-- ˝æ›ø‚ Mybatis-plus-->
-                  
-      <dependency>
-                        
-        <groupId>com.baomidou</groupId>
-                        
-        <artifactId>mybatis-plus-boot-starter</artifactId>
-                        
-        <version>3.4.1</version>
-                    
-      </dependency>
-                  
-      <dependency>
-                        
-        <groupId>com.baomidou</groupId>
-                        
-        <artifactId>mybatis-plus-generator</artifactId>
-                        
-        <version>3.4.1</version>
-                    
-      </dependency>
-                  
-      <dependency>
-                        
-        <groupId>mysql</groupId>
-                        
-        <artifactId>mysql-connector-java</artifactId>
-                        
-        <scope>runtime</scope>
-                        
-        <version>8.0.21</version>
-                    
-      </dependency>
-                  
-      <!--–°¿±Ω∑ µÃÂ◊¢Ω‚-->
-                  
-      <dependency>
-                        
-        <groupId>org.projectlombok</groupId>
-                        
-        <artifactId>lombok</artifactId>
-                        
-        <optional>true</optional>
-                        
-        <version>1.18.18</version>
-                    
-      </dependency>
-                  
-      <!--MultipartFile file Œƒº˛-->
-                  
-      <dependency>
-                        
-        <groupId>commons-fileupload</groupId>
-                        
-        <artifactId>commons-fileupload</artifactId>
-                        
-        <version>1.4</version>
-                    
-      </dependency>
-                  
-      <!--»’÷æ-->
-              
-    </dependencies>
-        
-  </dependencyManagement>
-      
-  <!--springbootµƒ◊”π§≥Ã≈‰÷√-->
-      
-  <parent>
-            
-    <groupId>org.springframework.boot</groupId>
-            
-    <artifactId>spring-boot-starter-parent</artifactId>
-            
-    <version>2.3.5.RELEASE</version>
-        
-  </parent>
-      
-  <!--“¿¿µπÿœµ-->
-      
-  <!--±‡“Îπ‹¿Ì jdk∞Ê±æ∫Õ◊÷∑˚ºØ±‡¬Î-->
-  
-  <modules>
-      
-    <module>boran_erp-PD</module>
-      
-  </modules>
+
+    </parent>
+
+
+    <!--‰æùËµñÂÖ≥Á≥ª-->
+
+    <modules>
+        <module>boran_erp-PD</module>
+        <module>boran_erp-CS</module>
+    </modules>
 </project>

@@ -8,11 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="boran_erp-PD" />
+        <module name="boran_erp-CS" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="boran_erp-CS" options="-parameters" />
       <module name="boran_erp-PD" options="-parameters" />
     </option>
   </component>

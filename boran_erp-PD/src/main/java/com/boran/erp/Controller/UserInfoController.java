@@ -36,7 +36,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/userinfo")
-@CrossOrigin()
+@CrossOrigin()//解决跨域
 @Api(tags = "登陆模块")
 public class UserInfoController {
     @Autowired
@@ -80,9 +80,9 @@ public class UserInfoController {
     @ApiOperation(value = "测试分页")
     @RequestMapping(value = "/lists", method = RequestMethod.POST)
     @ApiOperationSupport(order = 100)
-    /*    @SaCheckLogin//判断是否登陆*/
+    @SaCheckLogin//判断是否登陆
     /*    @SaCheckPermission(value = {"user-add", "user-all", "user-delete"}, mode = SaMode.OR)*/
-    @SaCheckRole(value = {"超级管理员", "普通用户"}, mode = SaMode.AND)
+    @SaCheckRole(value = {"超级管理员", "普通用户"}, mode = SaMode.OR)
     public AjaxJson selectAndlist(int id, int pageNo, int pageSize, int desc) {
         IPage<UserInfo> page = new Page<>(pageNo, pageSize);
         QueryWrapper<UserInfo> wrapper = new QueryWrapper<>();
