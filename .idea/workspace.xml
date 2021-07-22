@@ -191,7 +191,7 @@
       <workItem from="1625795200740" duration="588000" />
       <workItem from="1626227296899" duration="3106000" />
       <workItem from="1626676454757" duration="4150000" />
-      <workItem from="1626760671713" duration="39369000" />
+      <workItem from="1626760671713" duration="39461000" />
     </task>
     <task id="LOCAL-00001" summary="sa-token权限奉陪完成，下一步加入没有权限的403返回和redis的缓存">
       <created>1624004221137</created>
@@ -256,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626861896620</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="整合nacos-sentinel断路器-配置fegin超时问题，&#10;配置common公共包">
+      <created>1626947348318</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1626947348318</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +277,7 @@
     <MESSAGE value="1.sa-token权限奉陪完成，全局异常返回完成，redis缓存完成,加入线程池异步和返回值" />
     <MESSAGE value="整合nacos" />
     <MESSAGE value="整合nacos-sentinel断路器-配置fegin超时问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="整合nacos-sentinel断路器-配置fegin超时问题" />
+    <MESSAGE value="整合nacos-sentinel断路器-配置fegin超时问题，&#10;配置common公共包" />
+    <option name="LAST_COMMIT_MESSAGE" value="整合nacos-sentinel断路器-配置fegin超时问题，&#10;配置common公共包" />
   </component>
 </project>
