@@ -15,12 +15,11 @@ spring:
         port: 8720
         clientIp: localhost
       eager: true  #取消控制台懒加载，默认false要刷新请求sentinel才会在面板显示
-#feign:
-#  sentinel:
-#    enabled: true
+
 feign:
   client:
     config:
+#      配置fegin超时
       default:
         connectTimeout: 5000
         readTimeout: 5000

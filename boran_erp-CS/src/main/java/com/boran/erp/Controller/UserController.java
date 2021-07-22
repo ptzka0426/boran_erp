@@ -1,9 +1,9 @@
-package com.boran_erp.Controller;
+package com.boran.erp.Controller;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
-import com.boran_erp.AjaxJson;
-import com.boran_erp.Client.userClient;
-import com.boran_erp.Handler.SentinelHandlersClass;
+import com.boran.erp.Client.userClient;
+import com.boran.erp.Handler.SentinelHandlersClass;
+import com.boran.erp.Util.AjaxJson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.web.bind.annotation.*;

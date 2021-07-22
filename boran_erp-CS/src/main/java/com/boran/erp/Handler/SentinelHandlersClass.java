@@ -1,7 +1,6 @@
-package com.boran_erp.Handler;
+package com.boran.erp.Handler;
 
 import com.alibaba.csp.sentinel.slots.block.BlockException;
-import com.boran_erp.AjaxJson;
 
 import java.util.Map;
 

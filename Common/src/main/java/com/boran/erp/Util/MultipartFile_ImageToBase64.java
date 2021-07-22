@@ -7,7 +7,6 @@ import org.springframework.web.multipart.MultipartFile;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
-
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
@@ -84,7 +83,7 @@ public class MultipartFile_ImageToBase64 {
      * @return
      */
     public  static BufferedImage base64ToBufferedImage(String base64) {
-        BASE64Decoder decoder = new sun.misc.BASE64Decoder();
+        BASE64Decoder decoder = new BASE64Decoder();
         try {
             byte[] bytes1 = decoder.decodeBuffer(base64);
             ByteArrayInputStream bais = new ByteArrayInputStream(bytes1);

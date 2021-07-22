@@ -1,4 +1,4 @@
-package com.boran_erp.Client;
+package com.boran.erp.Client;
 
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.alibaba.csp.sentinel.slots.block.authority.AuthorityException;
@@ -6,10 +6,8 @@ import com.alibaba.csp.sentinel.slots.block.degrade.DegradeException;
 import com.alibaba.csp.sentinel.slots.block.flow.FlowException;
 import com.alibaba.csp.sentinel.slots.block.flow.param.ParamFlowException;
 import com.alibaba.csp.sentinel.slots.system.SystemBlockException;
-import com.boran_erp.AjaxJson;
-import org.bouncycastle.asn1.ocsp.ResponseData;
+import com.boran.erp.Util.AjaxJson;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.util.Map;
 

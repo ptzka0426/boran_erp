@@ -1,4 +1,4 @@
-package com.boran_erp;
+package com.boran.erp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

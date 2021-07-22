@@ -161,5 +161,6 @@
     <modules>
         <module>boran_erp-PD</module>
         <module>boran_erp-CS</module>
+        <module>Common</module>
     </modules>
 </project>
