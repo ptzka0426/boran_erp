@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/boran_erp-PD/pom.xml" />
         <option value="$PROJECT_DIR$/boran_erp-CS/pom.xml" />
         <option value="$PROJECT_DIR$/Common/pom.xml" />
+        <option value="$PROJECT_DIR$/boran_erp-zuul/pom.xml" />
       </list>
     </option>
   </component>

@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="boran_erp-PD" />
+        <module name="boran_erp-zuul" />
         <module name="boran_erp-CS" />
         <module name="Common" />
       </profile>
@@ -18,6 +19,7 @@
       <module name="Common" options="-parameters" />
       <module name="boran_erp-CS" options="-parameters" />
       <module name="boran_erp-PD" options="-parameters" />
+      <module name="boran_erp-zuul" options="-parameters" />
     </option>
   </component>
 </project>

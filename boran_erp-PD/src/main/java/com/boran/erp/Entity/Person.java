@@ -16,14 +16,16 @@ import java.util.Map;
  */
 @Component
 @Data
+//扫描yml的自定义值
 @ConfigurationProperties(prefix = "person")
 public class Person {
     private String lastName;
     private Integer age;
     private Boolean boss;
     private Date birth;
-    private Map<String,Object> maps;
+    private Map<String, Object> maps;
     private List<Object> lists;
+    //拿取yml下的未定义sss
     @Value("sss")
     private String lt;
 }

@@ -12,8 +12,6 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Constants;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.boran.erp.Entity.UserInfo;
-import com.boran.erp.Util.AjaxJson;
-import com.boran.erp.Util.RedisUtil;
 import com.boran.erp.service.UserInfoService;
 import com.boran.erp.service.UserRoleService;
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
@@ -21,12 +19,9 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import org.apache.commons.codec.digest.DigestUtils;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
-
+import com.boran.erp.Util.AjaxJson;
 import java.util.List;
 import java.util.Map;
 

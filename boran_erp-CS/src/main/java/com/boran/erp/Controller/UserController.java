@@ -19,7 +19,7 @@ import java.util.Map;
 @Scope("prototype")//多例
 public class UserController {
     @Autowired
-    private userClient userClient;
+    private com.boran.erp.Client.userClient userClient;
 
     /*熔断器的value和资源名都指向方法名（与访问接口value无关）*/
     /*@SentinelResource(value = "login", fallback = "handleException", blockHandler = "handleError")*/

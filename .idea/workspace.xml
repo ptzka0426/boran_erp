@@ -9,26 +9,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-CS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran_erp/AjaxJson.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran_erp/BoranErpCsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran/erp/BoranErpCsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran_erp/Client/userClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran/erp/Client/userClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran_erp/Client/userClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran/erp/Client/userClientImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran_erp/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran/erp/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran_erp/Handler/SentinelHandlersClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran/erp/Handler/SentinelHandlersClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Util/AjaxJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/com/boran/erp/Util/AjaxJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Util/Base64Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/com/boran/erp/Util/Base64Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Util/FTPUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/com/boran/erp/Util/FTPUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Util/HttpsUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/com/boran/erp/Util/HttpsUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Util/ImageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/com/boran/erp/Util/ImageUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Util/MultipartFile_ImageToBase64.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/com/boran/erp/Util/MultipartFile_ImageToBase64.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Util/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/com/boran/erp/Util/RedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/springboot_debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/springboot_debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_warn.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran/erp/Client/userClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran/erp/Client/userClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran/erp/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran/erp/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran/erp/Handler/SentinelHandlersClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran/erp/Handler/SentinelHandlersClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Controller/UserInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/conf/pro/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/conf/pro/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +69,7 @@
     <property name="android.sdk.path" value="D:/Android-SDK" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Common/src/main/java/com/boran/erp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Township-main" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -92,7 +78,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.5053619" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -120,19 +106,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ArchetypeLtPdApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ArchetypeLtPdApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="boran_erp-PD" />
       <extension name="coverage">
@@ -156,6 +129,13 @@
     <configuration name="BoranErpCsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="boran_erp-CS" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.boran_erp.BoranErpCsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoranErpZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="boran_erp-zuul" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.archetype.zuul.BoranErpZuulApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -191,7 +171,13 @@
       <workItem from="1625795200740" duration="588000" />
       <workItem from="1626227296899" duration="3106000" />
       <workItem from="1626676454757" duration="4150000" />
-      <workItem from="1626760671713" duration="39461000" />
+      <workItem from="1626760671713" duration="42361000" />
+      <workItem from="1627272084718" duration="2618000" />
+      <workItem from="1627280558417" duration="907000" />
+      <workItem from="1627284881091" duration="74000" />
+      <workItem from="1627284994783" duration="274000" />
+      <workItem from="1627285308308" duration="890000" />
+      <workItem from="1627287810079" duration="4691000" />
     </task>
     <task id="LOCAL-00001" summary="sa-token权限奉陪完成，下一步加入没有权限的403返回和redis的缓存">
       <created>1624004221137</created>
@@ -263,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626947348318</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="整合nacos-sentinel断路器-配置fegin超时问题，&#10;配置common公共包">
+      <created>1626947402808</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1626947402808</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
