@@ -16,6 +16,7 @@ import java.util.Map;
 
 /*@FeignClient(name = "provide-nacos-service", fallback = userClientImpl.class)*///继承时写入异常
 @FeignClient(name = "provide-nacos-service")//自定义配置sentinel
+//@FeignClient(name = "gatewa-nacos")
 public interface userClient {
 
 

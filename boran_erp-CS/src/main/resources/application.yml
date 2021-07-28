@@ -21,7 +21,7 @@ feign:
     config:
 #      配置fegin超时
       default:
-        connectTimeout: 5000
-        readTimeout: 5000
+        connectTimeout: 10000
+        readTimeout: 10000
   sentinel:
     enabled: true

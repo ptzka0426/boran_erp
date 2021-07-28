@@ -25,7 +25,6 @@
     <description>Archetypec初级骨架</description>
 
     <!-- 集中定义依赖版本号，定义属性值-->
-
     <properties>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -120,7 +119,6 @@
             </dependency>
 
             <!--MultipartFile file 文件-->
-
             <dependency>
 
                 <groupId>commons-fileupload</groupId>
@@ -135,7 +133,7 @@
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>2.2.1.RELEASE</version>
+                <version>2.2.5.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -146,13 +144,11 @@
 
     <!--springboot的子工程配置-->
     <parent>
-
         <groupId>org.springframework.boot</groupId>
 
         <artifactId>spring-boot-starter-parent</artifactId>
 
         <version>2.3.5.RELEASE</version>
-
     </parent>
 
 
@@ -161,6 +157,8 @@
     <modules>
         <module>boran_erp-PD</module>
         <module>boran_erp-CS</module>
+        <module>boran_erp-zuul</module>
         <module>Common</module>
     </modules>
+
 </project>

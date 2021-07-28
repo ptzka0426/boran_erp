@@ -3,8 +3,6 @@ package com.boran.erp.Config;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
-import com.baomidou.mybatisplus.extension.plugins.OptimisticLockerInterceptor;
-import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
@@ -16,6 +14,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @create 2020-12-11 11:27
  */
 //Spring boot方式
+@EnableTransactionManagement//开启事务
 @Configuration
 @MapperScan("com.boran.erp.mapper")
 public class MybatisPlusConfig {

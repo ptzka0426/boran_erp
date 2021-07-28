@@ -16,29 +16,27 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr:  localhost:8848 #nacos的ip地址
     gateway:
       discovery:
         locator:
           enabled: true                   # 让gateway通过服务发现组件找到其他的微服务
       routes:
-        - id: provide-nacos-service       # 唯一标识，通常使用服务id(id写死不能负载均衡)
-          uri: lb://provide-nacos-service #lb代表从注册中心获取服务，lb是Load Balance的缩写
-          #uri: http://localhost:8762
-          predicates:                     # 断言
-            - Path=/provide-nacos-service/**                #匹配请求方法
-            - Method=Get,Post             #请求的方式
-            #- Cookie=DOGE,throwable
-            #- Header=accessToken,Doge
-          filters:
-            - StripPrefix=1
-            #- SaveSession
-
         - id: consume-nacos-service
           uri: lb://consume-nacos-service
           predicates:
-            - Path=/consume-nacos-service/**         # 当这里- Path=/gea/ 有值得时候gea 代表服务器，所以filters: - StripPrefix=1 必须要写，否则不能发现
+            - Path=/**        #/consume-nacos-service/** 当这里- Path=/gea/ 有值得时候gea 代表服务器，所以filters: - StripPrefix=1 必须要写，否则不能发现
             - Method=Get,Post
-          filters:
-            - StripPrefix=1
+#          filters:
+#            - StripPrefix=1
+           #- SaveSession
+#        - id: provide-nacos-service       # 唯一标识，通常使用服务id(id写死不能负载均衡)
+#          uri: lb://provide-nacos-service #lb代表从注册中心获取服务，lb是Load Balance的缩写
+#          predicates: # 断言
+#              - Path=/**                #匹配请求方法/provide-nacos-service/**
+#              - Method=Get,Post             #请求的方式
+#              - Cookie=DOGE,throwable
+#              - Header=accessToken,Doge
+#          filters:
+#            - StripPrefix=1
             #- SaveSession

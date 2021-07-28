@@ -18,11 +18,12 @@ import java.util.concurrent.TimeUnit;
  * @descript Redis工具类
  */
 @Component
-public class RedisUtil {
+public class RedisUtils {
     @Autowired
     private StringRedisTemplate redisTemplate;
 
     public void setRedisTemplate(StringRedisTemplate redisTemplate) {
+        System.out.println("1111111111111111111111111111111111111111111111");
         this.redisTemplate = redisTemplate;
     }
 

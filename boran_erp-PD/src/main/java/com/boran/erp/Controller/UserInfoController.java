@@ -1,15 +1,12 @@
 package com.boran.erp.Controller;
 
 import cn.dev33.satoken.annotation.SaCheckLogin;
-import cn.dev33.satoken.annotation.SaCheckPermission;
 import cn.dev33.satoken.annotation.SaCheckRole;
 import cn.dev33.satoken.annotation.SaMode;
-import cn.dev33.satoken.exception.NotLoginException;
 import cn.dev33.satoken.stp.SaLoginModel;
 import cn.dev33.satoken.stp.StpUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.core.toolkit.Constants;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.boran.erp.Entity.UserInfo;
 import com.boran.erp.service.UserInfoService;
@@ -20,11 +17,13 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import com.boran.erp.Util.AjaxJson;
 import java.util.List;
 import java.util.Map;
-
+import java.util.concurrent.TimeUnit;
+import com.boran.erp.Util.RedisUtils;
 /**
  * @Author LT
  * @create 2021-06-16 15:40
@@ -39,6 +38,9 @@ public class UserInfoController {
     @Autowired
     //private UserInfoService userv;
     private UserRoleService userrole;
+    @Autowired
+    private RedisUtils redisUtils;
+
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ApiImplicitParams({
@@ -47,6 +49,8 @@ public class UserInfoController {
     })
     @ApiOperation(value = "登陆")
     @ApiOperationSupport(order = 1)
+    //查询只读，不做修改
+    @Transactional(readOnly = true)
     public AjaxJson login(@RequestParam Map<String, Object> userInfo) {
         /*System.out.println(userInfoService.sayHello("123")+"---------------------");
         userInfoService.executeAsync();*/
@@ -62,6 +66,8 @@ public class UserInfoController {
                             .setTimeout(60 * 60)            // 指定此次登录token的有效期, 单位:（60*60）秒 （如未指定，自动取全局配置的timeout值）
                     );
                 }
+               /* redisUtils.set("lt","123");
+                redisUtils.expire("lt",1000, TimeUnit.SECONDS);*/
                 /*System.out.println(StpUtil.hasPermission("超级管理员:Insert"));*/
                 /*System.out.println(StpUtil.hasPermission("普通用户:Delete"));*/
                 /*satoken令牌认证*/

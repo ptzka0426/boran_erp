@@ -1,3 +1,0 @@
-2021-07-22 16:44:56.295 [main] WARN  c.g.x.k.spring.extension.OpenApiExtensionResolver - (Ignores) Failed to read Markdown files,Error Message:class path resource [sign/] cannot be resolved to URL because it does not exist 
-2021-07-22 16:45:02.010 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2021-07-22 16:45:02.038 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
