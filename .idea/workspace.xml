@@ -4,30 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b203db51-bc87-4bc6-bd66-de367cd2dc3d" name="Default Changelist" comment="">
+    <list default="true" id="b203db51-bc87-4bc6-bd66-de367cd2dc3d" name="Default Changelist" comment="网关访问fegin超时问题，网关配置拦截（待处理）">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/src/main/java/com/boran/erp/Util/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/com/boran/erp/Util/RedisUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran/erp/Client/userClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/java/com/boran/erp/Client/userClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-CS/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/ArchetypeLtPdApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/ArchetypeLtPdApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/RedisAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/RedisAutoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/sa_token/StpInterfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/sa_token/StpInterfaceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Controller/UserInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/conf/pro/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/conf/pro/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-zuul/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-zuul/src/main/java/com/boran/zuul/BoranErpZuulApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-zuul/src/main/java/com/boran/erp/BoranErpZuulApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-zuul/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/springboot_debug.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_info.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs.home_IS_UNDEFINED/qcc/web_warn.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +77,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.5053619" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -200,6 +181,9 @@
       <workItem from="1627371347553" duration="952000" />
       <workItem from="1627372482063" duration="7279000" />
       <workItem from="1627435887536" duration="16669000" />
+      <workItem from="1627453888355" duration="3583000" />
+      <workItem from="1627528358041" duration="13039000" />
+      <workItem from="1627955357195" duration="1342000" />
     </task>
     <task id="LOCAL-00001" summary="sa-token权限奉陪完成，下一步加入没有权限的403返回和redis的缓存">
       <created>1624004221137</created>
@@ -278,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626947402808</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="网关访问fegin超时问题，网关配置拦截（待处理）">
+      <created>1627454125882</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1627454125883</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +284,7 @@
     <MESSAGE value="整合nacos" />
     <MESSAGE value="整合nacos-sentinel断路器-配置fegin超时问题" />
     <MESSAGE value="整合nacos-sentinel断路器-配置fegin超时问题，&#10;配置common公共包" />
-    <option name="LAST_COMMIT_MESSAGE" value="整合nacos-sentinel断路器-配置fegin超时问题，&#10;配置common公共包" />
+    <MESSAGE value="网关访问fegin超时问题，网关配置拦截（待处理）" />
+    <option name="LAST_COMMIT_MESSAGE" value="网关访问fegin超时问题，网关配置拦截（待处理）" />
   </component>
 </project>
