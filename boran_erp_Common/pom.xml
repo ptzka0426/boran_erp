@@ -9,20 +9,21 @@
         <!--项目的版本-->
         <version>1.0-SNAPSHOT</version>
     </parent>
+
     <groupId>com.Archetype.Common</groupId>
     <artifactId>boran_erp_Common</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <name>Common</name>
+    <name>boran_erp_Common</name>
+    <version>1.1-SNAPSHOT</version>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>2.3.5.RELEASE</version>
-        </dependency>
+        </dependency>-->
         <!--小辣椒实体注解-->
         <dependency>
             <groupId>org.projectlombok</groupId>

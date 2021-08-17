@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b203db51-bc87-4bc6-bd66-de367cd2dc3d" name="Default Changelist" comment="网关访问fegin超时问题，网关配置拦截（待处理）">
+    <list default="true" id="b203db51-bc87-4bc6-bd66-de367cd2dc3d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Controller/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Controller/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boran_erp_Common/src/main/java/com/boran/erp/Util/boran_glerp.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/ArchetypeLtPdApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/ArchetypeLtPdApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Controller/UserInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/conf/pro/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/conf/pro/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp_Common/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp_Common/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp_Common/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp_Common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/com/boran/erp/Util/AjaxJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp_Common/src/main/java/com/boran/erp/Util/AjaxJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/com/boran/erp/Util/Base64Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp_Common/src/main/java/com/boran/erp/Util/Base64Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/com/boran/erp/Util/FTPUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp_Common/src/main/java/com/boran/erp/Util/FTPUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/com/boran/erp/Util/HttpsUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp_Common/src/main/java/com/boran/erp/Util/HttpsUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/com/boran/erp/Util/ImageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp_Common/src/main/java/com/boran/erp/Util/ImageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/com/boran/erp/Util/MultipartFile_ImageToBase64.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp_Common/src/main/java/com/boran/erp/Util/MultipartFile_ImageToBase64.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/com/boran/erp/Util/RedisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp_Common/src/main/java/com/boran/erp/Util/RedisUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-CS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-CS/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-PD/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +85,7 @@
     <property name="android.sdk.path" value="D:/Android-SDK" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rocketmq-console" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -77,17 +94,18 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.5053619" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LT\Desktop\boran_erp\boran_erp-PD\src\main\resources" />
       <recent name="C:\Users\LT\Desktop\boran_erp\boran_erp-PD\src\main\java\com\boran\erp\Config" />
       <recent name="C:\Users\LT\Desktop\boran_erp\Common\src\main\java\com\boran\erp" />
       <recent name="C:\Users\LT\Desktop\boran_erp\Common\src\main\java\com\boran_erp" />
       <recent name="C:\Users\LT\Desktop\boran_erp\boran_erp-PD\src\main\resources\mapper" />
-      <recent name="C:\Users\LT\Desktop\boran_erp\boran_erp-PD\src\main\java\com\boran\erp\service\impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LT\Desktop\boran_erp\Common\src\main\java\com\boran\erp\Util" />
       <recent name="C:\Users\LT\Desktop\boran_erp\boran_erp-PD\src\main\java\com\boran\erp\Util" />
       <recent name="C:\Users\LT\Desktop\boran_erp\boran_erp-PD\src\main\java\com\boran\erp\Config\Knife4j" />
     </key>
@@ -105,7 +123,33 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ArchetypeLtPdApplication">
+  <component name="RunManager" selected="Application.Producer">
+    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.boran.erp.Controller.Consumer" />
+      <module name="boran_erp-PD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.boran.erp.Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.boran.erp.Controller.Producer" />
+      <module name="boran_erp-PD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.boran.erp.Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArchetypeLtPdApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="boran_erp-PD" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.boran.erp.ArchetypeLtPdApplication" />
@@ -140,12 +184,16 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Consumer" />
+      <item itemvalue="Application.Producer" />
       <item itemvalue="Spring Boot.ArchetypeLtPdApplication" />
       <item itemvalue="Spring Boot.BoranErpCsApplication" />
       <item itemvalue="Spring Boot.BoranErpZuulApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Consumer" />
+        <item itemvalue="Application.Producer" />
         <item itemvalue="Spring Boot.ArchetypeLtPdApplication" />
         <item itemvalue="Spring Boot.BoranErpZuulApplication" />
         <item itemvalue="Spring Boot.BoranErpCsApplication" />
@@ -183,7 +231,14 @@
       <workItem from="1627435887536" duration="16669000" />
       <workItem from="1627453888355" duration="3583000" />
       <workItem from="1627528358041" duration="13039000" />
-      <workItem from="1627955357195" duration="1342000" />
+      <workItem from="1627955357195" duration="1483000" />
+      <workItem from="1627979503073" duration="2722000" />
+      <workItem from="1628497939496" duration="1426000" />
+      <workItem from="1628647029678" duration="5703000" />
+      <workItem from="1628733916266" duration="4219000" />
+      <workItem from="1628762037822" duration="4078000" />
+      <workItem from="1629076819141" duration="626000" />
+      <workItem from="1629101087165" duration="6395000" />
     </task>
     <task id="LOCAL-00001" summary="sa-token权限奉陪完成，下一步加入没有权限的403返回和redis的缓存">
       <created>1624004221137</created>
@@ -269,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627454125883</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="网关访问fegin超时问题，网关配置拦截（待处理）">
+      <created>1627979252131</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1627979252131</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

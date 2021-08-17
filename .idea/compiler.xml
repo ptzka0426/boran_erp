@@ -10,6 +10,7 @@
         <module name="boran_erp-PD" />
         <module name="boran_erp-zuul" />
         <module name="boran_erp-CS" />
+        <module name="boran_erp_Common" />
         <module name="Common" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="boran_erp-CS" options="-parameters" />
       <module name="boran_erp-PD" options="-parameters" />
       <module name="boran_erp-zuul" options="-parameters" />
+      <module name="boran_erp_Common" options="-parameters" />
     </option>
   </component>
 </project>
