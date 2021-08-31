@@ -97,7 +97,7 @@ public class MultipartFile_ImageToBase64 {
      * 图片压缩
      */
     public static String imageToBase64(BufferedImage bufferedImage) {
-        org.apache.tomcat.util.codec.binary.Base64 encoder = new org.apache.tomcat.util.codec.binary.Base64();
+        Base64 encoder = new Base64();
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         try {
             ImageIO.write(bufferedImage, "jpg", baos);

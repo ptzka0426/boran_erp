@@ -10,6 +10,11 @@ import redis.clients.jedis.Jedis;
  * @create 2021-08-16 16:11
  */
 public class Producer {
+    /**
+     * 生产者
+     * @param args
+     * @throws MQClientException
+     */
     public static void main(String[] args) throws MQClientException {
         //创建生产者并指定组
         DefaultMQProducer producer = new DefaultMQProducer("my-group");
@@ -22,12 +27,10 @@ public class Producer {
         try {
             for (int i = 0; i < 10; i++) {
               /*  Thread.sleep(1000); */// 每秒发送一次MQ
-
                 Message msg = new Message("my-topic", // topic 主题名称
                         "TagA", // tag 临时值
                         ("message-"+i).getBytes()// body 内容
                 );
-
                 SendResult sendResult = producer.send(msg);
                 //打印消息的完整信息
                 System.out.println(sendResult.toString());

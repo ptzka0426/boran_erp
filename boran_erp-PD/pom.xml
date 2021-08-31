@@ -7,12 +7,12 @@
         <!--项目的通用名称-->
         <artifactId>boran_erp</artifactId>
         <!--项目的版本-->
-        <version>1.0-SNAPSHOT</version>
+        <version>1.1-SNAPSHOT</version>
     </parent>
 
     <groupId>com.Archetype.pd</groupId>
     <artifactId>boran_erp-PD</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1-SNAPSHOT</version>
     <name>boran_erp-PD</name>
     <description>Demo project for Spring Boot</description>
     <properties>
@@ -172,6 +172,8 @@
     </dependencies>
 
     <build>
+        <!-- 固定Jar包名字 cloudkit-->
+        <finalName>springboot-cloudkit-example</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

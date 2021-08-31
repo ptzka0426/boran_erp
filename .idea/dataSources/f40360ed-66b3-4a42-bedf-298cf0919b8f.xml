@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@8.135.54.170">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.21">
-    <root id="1">
-      <ServerVersion>8.0.23</ServerVersion>
-      <Grants>boran_glerp|schema||boran_glerp||ALTER|G
-boran_glerp|schema||boran_glerp||ALTER ROUTINE|G
-boran_glerp|schema||boran_glerp||CREATE|G
-boran_glerp|schema||boran_glerp||CREATE ROUTINE|G
-boran_glerp|schema||boran_glerp||CREATE TEMPORARY TABLES|G
-boran_glerp|schema||boran_glerp||CREATE VIEW|G
-boran_glerp|schema||boran_glerp||DELETE|G
-boran_glerp|schema||boran_glerp||DROP|G
-boran_glerp|schema||boran_glerp||EVENT|G
-boran_glerp|schema||boran_glerp||EXECUTE|G
-boran_glerp|schema||boran_glerp||INDEX|G
-boran_glerp|schema||boran_glerp||INSERT|G
-boran_glerp|schema||boran_glerp||LOCK TABLES|G
-boran_glerp|schema||boran_glerp||REFERENCES|G
-boran_glerp|schema||boran_glerp||SELECT|G
-boran_glerp|schema||boran_glerp||SHOW VIEW|G
-boran_glerp|schema||boran_glerp||TRIGGER|G
-boran_glerp|schema||boran_glerp||UPDATE|G</Grants>
-      <DefaultEngine>InnoDB</DefaultEngine>
-      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
-      <DefaultCasing>lower/lower</DefaultCasing>
-    </root>
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.23">
+    <root id="1"/>
     <schema id="2" parent="1" name="boran_glerp">
       <Current>1</Current>
       <Collation>utf8_general_ci</Collation>

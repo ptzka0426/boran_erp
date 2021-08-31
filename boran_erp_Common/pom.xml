@@ -7,7 +7,7 @@
         <!--项目的通用名称-->
         <artifactId>boran_erp</artifactId>
         <!--项目的版本-->
-        <version>1.0-SNAPSHOT</version>
+        <version>1.1-SNAPSHOT</version>
     </parent>
 
     <groupId>com.Archetype.Common</groupId>
@@ -76,6 +76,10 @@
             <groupId>commons-net</groupId>
             <artifactId>commons-net</artifactId>
             <version>3.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
         </dependency>
     </dependencies>
 
