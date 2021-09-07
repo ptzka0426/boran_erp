@@ -2,6 +2,7 @@ package com.boran.erp.Config.sa_token;
 
 import cn.dev33.satoken.interceptor.SaAnnotationInterceptor;
 import cn.dev33.satoken.interceptor.SaRouteInterceptor;
+import cn.dev33.satoken.router.SaRouter;
 import cn.dev33.satoken.router.SaRouterUtil;
 import cn.dev33.satoken.spring.SpringMVCUtil;
 import cn.dev33.satoken.stp.StpUtil;
@@ -26,32 +27,32 @@ public class SaTokenConfigure implements WebMvcConfigurer {
 
             // 登录验证 -- 拦截所有路由，并排除/user/doLogin 用于开放登录
             //SaRouterUtil.match("/**", "/userinfo/login", () -> StpUtil.checkLogin());
-
+           /* System.out.println(request.getRequestPath());*/
             // 登录验证 -- 排除多个路径
-            SaRouterUtil.match(Arrays.asList("/**"), Arrays.asList(
+            SaRouter.match(Arrays.asList("/**"), Arrays.asList(
                     "/userinfo/login",
                     //接口文档排除
                     "/doc.html/**",
-                    "/v2/api-docs-ext/**",
-                    "/swagger-resources/**",
+                    "/webjars/js/**",
+                    "/webjars/css/**",
                     "/v2/api-docs/**",
                     "/swagger-ui.html/**",
-                    "/swagger-resources/configuration/ui/**",
-                    "/swagger-resources/configuration/security"
+                    "/favicon.ico",
+                    "/swagger-resources/**"
             ), () -> StpUtil.checkLogin());
             //继承maven的aop注解鉴权
             // 匹配 restful 风格路由
-            SaRouterUtil.match("/article/get/{id}", () -> StpUtil.checkPermission("article"));
+            SaRouter.match("/article/get/{id}", () -> StpUtil.checkPermission("article"));
 
             // 检查请求方式
-            SaRouterUtil.match("/notice/**", () -> {
+            SaRouter.match("/notice/**", () -> {
                 if (SpringMVCUtil.getRequest().equals(HttpMethod.GET.toString())) {
                     StpUtil.checkPermission("notice");
                 }
             });
 
             // 在多账号模式下，可以使用任意StpUtil进行校验
-            SaRouterUtil.match("/user/**", () -> StpUtil.checkLogin());
+            SaRouter.match("/user/**", () -> StpUtil.checkLogin());
 
         })).addPathPatterns("/**");
         /* registry.addInterceptor(new SaAnnotationInterceptor()).addPathPatterns("/**");*/

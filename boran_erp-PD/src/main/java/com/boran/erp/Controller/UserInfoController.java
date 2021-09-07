@@ -12,6 +12,7 @@ import com.boran.erp.Entity.UserInfo;
 import com.boran.erp.service.UserInfoService;
 import com.boran.erp.service.UserRoleService;
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
+import io.seata.spring.annotation.GlobalTransactional;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -20,14 +21,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import com.boran.erp.Util.AjaxJson;
+
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+
 import com.boran.erp.Util.RedisUtils;
+
 /**
  * @Author LT
  * @create 2021-06-16 15:40
  */
+
 @RestController
 @RequestMapping("/userinfo")
 @CrossOrigin()//解决跨域
@@ -41,7 +46,6 @@ public class UserInfoController {
     @Autowired
     private RedisUtils redisUtils;
 
-
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ApiImplicitParams({
             @ApiImplicitParam(name = "user_yhm", value = "用户名", required = true),
@@ -54,6 +58,7 @@ public class UserInfoController {
     public AjaxJson login(@RequestParam Map<String, Object> userInfo) {
         /*System.out.println(userInfoService.sayHello("123")+"---------------------");
         userInfoService.executeAsync();*/
+
         if (userInfo.containsKey("user_yhm") && userInfo.containsKey("user_pwd")) {
             List<UserInfo> userInfos = userInfoService.listByMap(userInfo);
             if (userInfos.size() <= 0) {
@@ -101,4 +106,18 @@ public class UserInfoController {
         return AjaxJson.getSuccess("分页", userInfoService.page(page, wrapper).getRecords().toArray());
     }
 
+    @GlobalTransactional(name = "/create_seata", rollbackFor = Exception.class)
+    @GetMapping("/seata_s")
+    public AjaxJson test_Seata() {
+
+        UserInfo l = new UserInfo();
+        l.setUser_pwd("123456");
+        l.setId(1);
+
+        userInfoService.updateById(l);
+        System.out.println("库存修改成功");
+        int a = 8 / 0;
+        System.out.println("金额修改失败");
+        return AjaxJson.getSuccess("更新成功！");
+    }
 }
