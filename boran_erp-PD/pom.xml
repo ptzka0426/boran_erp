@@ -211,16 +211,16 @@
     <!--配置项目文件 conf -->
     <profiles>
         <profile>
-            <id>dev</id>
+            <id>Linux</id>
             <properties>
-                <profiles.active>dev</profiles.active>
+                <profiles.active>Linux</profiles.active>
             </properties>
         </profile>
 
         <profile>
-            <id>pro</id>
+            <id>Windows</id>
             <properties>
-                <profiles.active>pro</profiles.active>
+                <profiles.active>Windows</profiles.active>
             </properties>
             <!--默认打包 true-->
             <activation>

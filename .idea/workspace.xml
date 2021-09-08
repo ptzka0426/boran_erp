@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b203db51-bc87-4bc6-bd66-de367cd2dc3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/Seata/SeataDataSoucreConfigure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/file.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/registry.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boran_erp-PD/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/ArchetypeLtPdApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/ArchetypeLtPdApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/sa_token/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Config/sa_token/SaTokenConfigure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Controller/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Controller/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/java/com/boran/erp/Controller/UserInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/conf/pro/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/conf/pro/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/conf/dev/application_linux.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/conf/Linux/application_linux.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/conf/pro/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/boran_erp-PD/src/main/resources/conf/Windows/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +42,6 @@
         <option name="mavenHome" value="D:/maven_lucene/apache-maven-3.6.3" />
         <option name="userSettingsFile" value="D:\maven_lucene\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="enabledProfiles">
-      <list>
-        <option value="pro" />
-      </list>
     </option>
   </component>
   <component name="ProjectId" id="1sT89TbNUt9uNpUETjbEMMEdup2" />
@@ -264,7 +252,7 @@
       <workItem from="1630920496716" duration="244000" />
       <workItem from="1630920800698" duration="441000" />
       <workItem from="1630921297252" duration="990000" />
-      <workItem from="1630980253715" duration="15306000" />
+      <workItem from="1630980253715" duration="17549000" />
     </task>
     <task id="LOCAL-00001" summary="sa-token权限奉陪完成，下一步加入没有权限的403返回和redis的缓存">
       <created>1624004221137</created>
@@ -378,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630392221000</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="seata的集成">
+      <created>1631008974233</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1631008974233</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,6 +389,7 @@
     <MESSAGE value="整合nacos-sentinel断路器-配置fegin超时问题" />
     <MESSAGE value="整合nacos-sentinel断路器-配置fegin超时问题，&#10;配置common公共包" />
     <MESSAGE value="网关访问fegin超时问题，网关配置拦截（待处理）" />
-    <option name="LAST_COMMIT_MESSAGE" value="网关访问fegin超时问题，网关配置拦截（待处理）" />
+    <MESSAGE value="seata的集成" />
+    <option name="LAST_COMMIT_MESSAGE" value="seata的集成" />
   </component>
 </project>
